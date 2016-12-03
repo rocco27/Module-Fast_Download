@@ -28,7 +28,7 @@ define('failure', "Error, failed to generate the alias file");
 define('success', "Sikeres");
 define('fast_download_service_for', "Downloads redirection service for %s");
 define('to_the_path', "To the path");
-define('at_url', "at URL");
+define('at_url', "URL címen");
 define('create_alias_for', "Create alias for");
 define('fast_dl', "Átirányított letöltések (FastDL)");
 define('current_aliases_at_remote_server', "Current aliases at remote server");
