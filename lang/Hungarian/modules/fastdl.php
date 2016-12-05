@@ -22,9 +22,9 @@
  *
  */
 
-define('create_alias', "Álnév és mappa létrehozása");
+define('create_alias', "Mappa és álnév létrehozása");
 define('save_as', "Mentés mint");
-define('failure', "Error, failed to generate the alias file");
+define('failure', "Hiba, nem sikerült az álnév fájl generálása");
 define('success', "Sikeres");
 define('fast_download_service_for', "Downloads redirection service for %s");
 define('to_the_path', "To the path");
@@ -45,9 +45,9 @@ define('apply_settings_and_restart_fastdl', "Save the daemon configuration and r
 define('stop_fastdl', "Stop Fast Download Daemon.");
 define('fast_download_daemon_running', "Fast Download Daemon is running.");
 define('fast_download_daemon_not_running', "Fast Download Daemon is not running.");
-define('fastdl_could_not_be_restarted', "The Fast Download service could not be restarted.");
-define('configuration_file_could_not_be_written', "The configuration file could not be written.");
-define('remove_folders', "Remove folder for selected aliases.");
+define('fastdl_could_not_be_restarted', "A gyors letöltés szolgáltatást nem lehet újraindítani.");
+define('configuration_file_could_not_be_written', "A konfigurációs fájl nem írható.");
+define('remove_folders', "Mappa eltávolítása a kiválasztott álnevek.");
 define('remove_folder', "Könyvtár eltávolítása");
 define('delete_alias', "Álvév törlése");
 define('no_game_homes_assigned', "No game servers assigned for you. You need to ask your OGP admin to assign games for you.");
