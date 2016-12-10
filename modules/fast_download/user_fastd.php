@@ -24,7 +24,7 @@
 
 require_once("modules/config_games/server_config_parser.php");
 require_once('includes/lib_remote.php');
-require_once('modules/fastdl/functions.php');
+require_once('modules/fast_download/functions.php');
 function exec_ogp_module() 
 {
 	global $db,$view;

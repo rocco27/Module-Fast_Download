@@ -24,7 +24,7 @@
 
 require_once("modules/config_games/server_config_parser.php");
 require_once('includes/lib_remote.php');
-require_once('modules/fastdl/functions.php');
+require_once('modules/fast_download/functions.php');
 require('includes/form_table_class.php');
 function exec_ogp_module() 
 {
@@ -84,7 +84,7 @@ function exec_ogp_module()
 		}
 		$rules = get_access_rules($_GET['home_cfg_id']);
 		$ft2 = new FormTable();
-		$ft2->start_form("?m=fastdl&home_cfg_id=".$_GET['home_cfg_id']."&access_rules=".$_GET['access_rules'] , "post");
+		$ft2->start_form("?m=fast_download&home_cfg_id=".$_GET['home_cfg_id']."&access_rules=".$_GET['access_rules'] , "post");
 		$ft2->start_table();
 		$ft2->add_field('text','match_file_extension',@$rules['match_file_extension']);
 		$ft2->add_field('text','match_client_ip',@$rules['match_client_ip']);
@@ -160,11 +160,11 @@ function exec_ogp_module()
 				$fastdl_info['listing'] = "1";
 			}
 			$ft1 = new FormTable();
-			$ft1->start_form("?m=fastdl&remote_server_id=".$_GET['remote_server_id'] , "post");
+			$ft1->start_form("?m=fast_download&remote_server_id=".$_GET['remote_server_id'] , "post");
 			$ft1->add_field_hidden("stop_fastdl", '');
 			$ft1->add_button("submit","stop_fastdl",stop_fastdl);
 			$ft1->end_form();
-			$ft1->start_form("?m=fastdl&remote_server_id=".$_GET['remote_server_id'] , "post");
+			$ft1->start_form("?m=fast_download&remote_server_id=".$_GET['remote_server_id'] , "post");
 			$ft1->start_table();
 			$ft1->add_field('string','fastdl_ip',$fastdl_info['ip']);
 			$ft1->add_field('string','fastdl_port',$fastdl_info['port']);
@@ -309,7 +309,7 @@ function exec_ogp_module()
 					print_success( fast_download_daemon_running );
 				else
 					print_failure( fast_download_daemon_not_running );
-				echo "<form method=POST action='?m=fastdl&remote_server_id=".$_GET['remote_server_id'].
+				echo "<form method=POST action='?m=fast_download&remote_server_id=".$_GET['remote_server_id'].
 					 "&advanced' ><input type=submit name=configuration value='".fast_dl_advanced."'></form>";
 			}
 			else
