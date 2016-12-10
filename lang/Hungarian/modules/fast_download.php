@@ -43,8 +43,8 @@ define('listing_info', "If 'on', the server will list the contents of folders.")
 define('fast_dl_advanced', "További beállítások");
 define('apply_settings_and_restart_fastdl', "Save the daemon configuration and restart it");
 define('stop_fastdl', "Stop Fast Download Daemon.");
-define('fast_download_daemon_running', "A gyors letöltés szolgáltatás fut.");
-define('fast_download_daemon_not_running', "A gyors letöltés szolgáltatás nem fut.");
+define('fast_download_daemon_running', "A gyors letöltés démon fut.");
+define('fast_download_daemon_not_running', "A gyors letöltés démon nem fut.");
 define('fastdl_could_not_be_restarted', "A gyors letöltés szolgáltatást nem lehet újraindítani.");
 define('configuration_file_could_not_be_written', "A konfigurációs fájl nem írható.");
 define('remove_folders', "Mappa eltávolítása a kiválasztott álnevek.");
