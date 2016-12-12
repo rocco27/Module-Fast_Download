@@ -23,9 +23,9 @@
  */
 
 define('create_alias', "Create the alias and folder");
-define('save_as', "Save As");
-define('failure', "Error, failed to generate the alias file");
-define('success', "Success");
+define('save_as', "Speichern als");
+define('failure', "Fehler, konnte die Alias-Datei nicht generieren");
+define('success', "Erfolg");
 define('fast_download_service_for', "Downloads redirection service for %s");
 define('to_the_path', "To the path");
 define('at_url', "at URL");

@@ -35,7 +35,7 @@ define('current_aliases_at_remote_server', "Aktuális álnevek a távoli szerver
 define('delete_selected_aliases', "A kiválasztott álnevek törlése");
 define('no_aliases_defined', "There are no web aliases defined by OGP for this remote server yet.");
 define('fastdl_port', "Port");
-define('fastdl_port_info', "Port on which your Fast Download server will start.");
+define('fastdl_port_info', "Port ahol a gyors letöltési démon el fog indulni.");
 define('fastdl_ip', "Cím");
 define('fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
 define('listing', "Felsorolás");
