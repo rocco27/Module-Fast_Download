@@ -27,7 +27,7 @@ define('save_as', "Speichern als");
 define('failure', "Fehler, konnte die Alias-Datei nicht generieren");
 define('success', "Erfolg");
 define('fast_download_service_for', "Downloads Umleitungsservice für %s");
-define('to_the_path', "To the path");
+define('to_the_path', "Zum Pfad");
 define('at_url', "at URL");
 define('create_alias_for', "Create alias for");
 define('fast_dl', "Weiterleiten von Downloads (FastDL)");
