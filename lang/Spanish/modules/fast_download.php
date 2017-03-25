@@ -33,7 +33,7 @@ define('create_alias_for', "Crear alias para");
 define('fast_dl', "Redirección de descargas (FastDL)");
 define('current_aliases_at_remote_server', "Alias actuales en el servidor remoto");
 define('delete_selected_aliases', "Elimina los alias seleccionados");
-define('no_aliases_defined', "No hay alias web definidas por OGP para este servidor remoto todavía.");
+define('no_aliases_defined', "Aún no hay alias web definidos por OGP para este servidor remoto.");
 define('fastdl_port', "Puerto");
 define('fastdl_port_info', "Puerto en el que tu servidor Fast Download se iniciará.");
 define('fastdl_ip', "Dirección");
