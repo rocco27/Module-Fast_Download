@@ -47,7 +47,7 @@ define('fast_download_daemon_running', "Fast Download Daemon jest uruchomiony.")
 define('fast_download_daemon_not_running', "Fast Download Daemon jest zatrzymany.");
 define('fastdl_could_not_be_restarted', "Nie można zrestartować usługi Fast Download.");
 define('configuration_file_could_not_be_written', "Nie można zapisać pliku konfiguracyjnego.");
-define('remove_folders', "suń folder dla wybranych aliasów.");
+define('remove_folders', "Usuń folder dla wybranych aliasów.");
 define('remove_folder', "Usuń folder");
 define('delete_alias', "Usuń alias");
 define('no_game_homes_assigned', "Brak serwerów gry przeznaczonych dla Ciebie. Musisz zwrócić się do admin OGP by przypisać dla Ciebie serwery.");
