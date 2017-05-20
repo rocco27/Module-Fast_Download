@@ -59,7 +59,9 @@ define('games_without_specified_rules', "Gry bez określonych reguł");
 define('match_file_extension', "Dopasować rozszerzenie pliku");
 define('match_file_extension_info', "Określ rozszerzenia, oddzielaj przecinkami, <br>które będzie możliwość pobrać<br>, <b>pozostałe będą niedostępne</b>.");
 define('match_client_ip', "Dopasuj klienta IP");
-define('match_client_ip_info', "Connections with matching IP will be granted,<br>blank for unrestricted access. You can use<br>multiple IPs or ranges separated by coma:<br>/xx subnets<br>Example: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br>Example: 10.0.0.0/255.0.0.0<br>Hyphen ranges<br>Example: 10.0.0.5-230<br>Asterisk matching<br>Example: 10.0.*.*");
+define('match_client_ip_info', "Połączenia z pasującym adresem IP zostaną przyznane,<br>
+puste dla nieograniczonego dostępu.<br>Możesz użyć wiele adresów IP lub zakresów oddzielonych przecinkami:<br>
+/xx podsieci<br> Przykład: 10.0.0.0/16<br> /xxx.xxx.xxx.xxx podsieci<br> Przykład: 10.0.0.0/255.0.0.0<br> Dzielniki<br> Przykład: 10.0.0.5-230<br> Gwiazdki<br> Przykład: 10.0.*.*");
 define('save_access_rules', "Zapisz reguły dostępu");
 define('create_access_rules', "Stwórz reguły dostępu");
 define('invalid_entries_found', "Znaleziono nieprawidłowe wpisy");
