@@ -22,26 +22,26 @@
  *
  */
 
-define('create_alias', "Create the alias and folder");
+define('create_alias', "Criar pasta");
 define('save_as', "Save As");
-define('failure', "Error, failed to generate the alias file");
-define('success', "Success");
-define('fast_download_service_for', "Downloads redirection service for %s");
-define('to_the_path', "To the path");
-define('at_url', "at URL");
-define('create_alias_for', "Create alias for");
-define('fast_dl', "Redirecting downloads (FastDL)");
-define('current_aliases_at_remote_server', "Current aliases at remote server");
-define('delete_selected_aliases', "Delete selected aliases");
-define('no_aliases_defined', "There are no web aliases defined by OGP for this remote server yet.");
-define('fastdl_port', "Port");
-define('fastdl_port_info', "Port on which your Fast Download server will start.");
-define('fastdl_ip', "Address");
-define('fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
-define('listing', "Listing");
-define('listing_info', "If 'on', the server will list the contents of folders.");
-define('fast_dl_advanced', "Advanced Settings");
-define('apply_settings_and_restart_fastdl', "Save the daemon configuration and restart it");
+define('failure', "Erro, não conseguiu gerar o arquivo de alias");
+define('success', "Sucesso");
+define('fast_download_service_for', "Downloads serviço de redirecionamento para %s");
+define('to_the_path', "Para o caminho");
+define('at_url', "URL");
+define('create_alias_for', "Criar pasta");
+define('fast_dl', "Redirecionando downloads (FastDL)");
+define('current_aliases_at_remote_server', "Selecionar servidor remoto");
+define('delete_selected_aliases', "Remover ");
+define('no_aliases_defined', "Ainda não há aliases da Web definidos pelo OGP para este servidor remoto.");
+define('fastdl_port', "Porta");
+define('fastdl_port_info', "Porta na qual o servidor Fast Download será iniciado.");
+define('fastdl_ip', "endereço de IP");
+define('fastdl_ip_info', "Porta na qual o servidor Fast Download será iniciado.");
+define('listing', "Listagem");
+define('listing_info', "Se 'online', o servidor irá listar o conteúdo das pastas.");
+define('fast_dl_advanced', "Configurações Avançadas");
+define('apply_settings_and_restart_fastdl', "Salve a configuração do daemon e reinicie-a");
 define('stop_fastdl', "Stop Fast Download Daemon.");
 define('fast_download_daemon_running', "Fast Download Daemon is running.");
 define('fast_download_daemon_not_running', "Fast Download Daemon is not running.");
