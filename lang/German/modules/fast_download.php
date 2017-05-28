@@ -66,7 +66,7 @@ define('invalid_entries_found', "Ungültige Einträge gefunden");
 define('game_name', "Spielname");
 define('alias_already_exists', "Alias %s existiert bereits.");
 define('warning_access_rules_applied_once_alias_created', "WARNING: Access rules are applied when the alias is created. No changes will be applied to the current aliases.");
-define('autostart_on_agent_startup', "Autostart on agent startup");
+define('autostart_on_agent_startup', "Autostart beim Start des Agenten");
 define('autostart_on_agent_startup_info', "Start the fast download daemon automatically when the agent starts.");
 define('port_forwarded_to_80', "Port weitergeleitet von 80");
 define('port_forwarded_to_80_info', "Enable this option if the port configured for this fast download daemon has been forwarded from port 80, so the port will be hidden at URLs.");
