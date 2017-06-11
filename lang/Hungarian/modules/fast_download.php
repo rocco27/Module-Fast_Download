@@ -29,7 +29,7 @@ define('success', "Sikeres");
 define('fast_download_service_for', "Letöltések átirányítási szolgáltatása a %s-hoz");
 define('to_the_path', "To the path");
 define('at_url', "URL címen");
-define('create_alias_for', "Create alias for");
+define('create_alias_for', "Álnév létrehozása");
 define('fast_dl', "Átirányított letöltések (FastDL)");
 define('current_aliases_at_remote_server', "Aktuális álnevek a távoli szerverhez");
 define('delete_selected_aliases', "A kiválasztott álnevek törlése");
