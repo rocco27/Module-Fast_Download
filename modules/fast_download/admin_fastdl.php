@@ -26,7 +26,7 @@ require_once("modules/config_games/server_config_parser.php");
 require_once('includes/lib_remote.php');
 require_once('modules/fast_download/functions.php');
 require('includes/form_table_class.php');
-function exec_ogp_module() 
+function exec_ogp_module()
 {
 	global $db,$view;
 	echo "<h2>".fast_dl."</h2>\n";
@@ -138,7 +138,7 @@ function exec_ogp_module()
 		if(isset( $_GET['advanced'] ) and isset( $_POST['configuration'] ) and isset( $_GET['remote_server_id'] ) and $_GET['remote_server_id'] != "")
 		{
 			echo "<h3>".fast_dl_advanced."</h3>";
-			$remote_server_id = $_GET['remote_server_id'];	
+			$remote_server_id = $_GET['remote_server_id'];
 			$remote_server = $db->getRemoteServer($remote_server_id);
 			$rserver = $db->getRemoteServerById($remote_server_id);
 			$remote = new OGPRemoteLibrary( $rserver['agent_ip'],
@@ -213,11 +213,12 @@ function exec_ogp_module()
 				 "<option></option>\n";
 			foreach ( $remote_servers as $server )
 			{
+				$display_ip = checkDisplayPublicIP($server['display_public_ip'],$server['agent_ip']);
 				$selected = ( isset( $_GET['remote_server_id'] ) and 
 							  $server['remote_server_id'] == $_GET['remote_server_id'] ) ? 
 							  "selected=selected" : "";
 				echo "<option $selected value='".$server['remote_server_id']."'>".
-					 $server['remote_server_name']." (".$server['agent_ip'].")</option>\n";
+					 $server['remote_server_name']." (".$display_ip.")</option>\n";
 			}
 			echo "</select></form>\n";
 		}
@@ -340,11 +341,15 @@ function exec_ogp_module()
 											   $server_home['agent_port'], 
 											   $server_home['encryption_key'], 
 											   $server_home['timeout']);
+
 				$fastdl_info = $remote->fastdl_get_info();
 				$fastdl_settings = get_fastdl_settings($server_home['remote_server_id']);
 				if( preg_match("/^(127|0)/",$fastdl_info['ip']) )
 					$fastdl_info['ip'] = $server_home['agent_ip'];
-				$address = ($fastdl_info['port'] == '80' OR ($fastdl_settings and $fastdl_settings['port_forwarded_to_80'] == '1')) ? $fastdl_info['ip'] : $fastdl_info['ip'].":".$fastdl_info['port'];
+
+				$fastdl_display_ip = checkDisplayPublicIP($server_home['display_public_ip'],$fastdl_info['ip']);
+
+				$address = ($fastdl_info['port'] == '80' OR ($fastdl_settings and $fastdl_settings['port_forwarded_to_80'] == '1')) ? $fastdl_display_ip : $fastdl_display_ip.":".$fastdl_info['port'];
 				$alias = isset( $_POST['alias'] ) ? $_POST['alias'] : str_replace(".","_",$ip)."_$port";
 				$path = isset( $_POST['path'] ) ? $_POST['path'] : "fastdl";
 				$aliases = $remote->fastdl_get_aliases();
