@@ -66,8 +66,8 @@ define('invalid_entries_found', "Se han encontrado entradas invalidas");
 define('game_name', "Nombre del juego");
 define('alias_already_exists', "El alias '%s' ya existe.");
 define('warning_access_rules_applied_once_alias_created', "AVISO: Las reglas de acceso son aplicadas cuando se crea el alias. Ningún cambio será aplicado a los alias existentes.");
-define('autostart_on_agent_startup', "Autoiniciar al iniciar el agente");
-define('autostart_on_agent_startup_info', "Iniciar el servicio de redireccion automaticamente cuando se inicia el agente.");
+define('autostart_on_agent_startup', "Autostart on Agent startup");
+define('autostart_on_agent_startup_info', "Start the fast download daemon automatically when the Agent starts.");
 define('port_forwarded_to_80', "Puerto redireccionado desde el puerto 80");
 define('port_forwarded_to_80_info', "Activa esta opción si el puerto 80 ha sido redireccionado al puerto configurado para este servicio, por lo que se ocultará en las URLs.");
 ?>

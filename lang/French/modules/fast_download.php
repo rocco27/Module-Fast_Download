@@ -66,8 +66,8 @@ define('invalid_entries_found', "Entrées invalides trouvées");
 define('game_name', "Nom du jeu");
 define('alias_already_exists', "l'Alias %s existe déjà.");
 define('warning_access_rules_applied_once_alias_created', "AVERTISSEMENT: Les règles d'accès sont appliquées lorsque l'Alias est créé. Aucun changement ne sera appliqué aux Alias actuels.");
-define('autostart_on_agent_startup', "Démarrage Auto au lancement de l'Agent");
-define('autostart_on_agent_startup_info', "Démarrer le daemon FastDL automatiquement quand l&apos;Agent se lance.");
+define('autostart_on_agent_startup', "Démarrer avec l&apos;Agent");
+define('autostart_on_agent_startup_info', "Démarrer automatiquement la deamon Fast Download au lancement de l&apos;Agent");
 define('port_forwarded_to_80', "Port redirigé depuis 80");
 define('port_forwarded_to_80_info', "Activer cette option si le port configuré pour le deamon FastDL a été redirigé depuis le port 80, comme ça le port sera caché dans les URLs.");
 ?>
