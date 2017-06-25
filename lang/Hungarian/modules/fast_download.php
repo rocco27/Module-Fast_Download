@@ -2,7 +2,7 @@
 /*
  *
  * OGP - Open Game Panel
- * Copyright (C) 2008 - 2016 The OGP Development Team
+ * Copyright (C) 2008 - 2017 The OGP Development Team
  *
  * http://www.opengamepanel.org/
  *
@@ -35,7 +35,7 @@ define('current_aliases_at_remote_server', "Aktuális álnevek a távoli szerver
 define('delete_selected_aliases', "A kiválasztott álnevek törlése");
 define('no_aliases_defined', "There are no web aliases defined by OGP for this remote server yet.");
 define('fastdl_port', "Port");
-define('fastdl_port_info', "Port ahol a gyors letöltési démon el fog indulni.");
+define('fastdl_port_info', "A port, amelyen a gyors letöltési démonod el fog indulni.");
 define('fastdl_ip', "Cím");
 define('fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
 define('listing', "Felsorolás");
