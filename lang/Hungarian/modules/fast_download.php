@@ -39,7 +39,7 @@ define('fastdl_port_info', "A port, amelyen a gyors letöltési démonod el fog 
 define('fastdl_ip', "Cím");
 define('fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
 define('listing', "Felsorolás");
-define('listing_info', "If 'on', the server will list the contents of folders.");
+define('listing_info', "Ha 'bekapcsolva', a szerver listázni fogja a mappák tartalmát.");
 define('fast_dl_advanced', "További beállítások");
 define('apply_settings_and_restart_fastdl', "A démon konfigurációjának a mentése és újraindítása");
 define('stop_fastdl', "Gyors letöltési démon leállítása.");
