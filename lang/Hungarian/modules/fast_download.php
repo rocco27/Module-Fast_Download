@@ -37,7 +37,7 @@ define('no_aliases_defined', "There are no web aliases defined by OGP for this r
 define('fastdl_port', "Port");
 define('fastdl_port_info', "A port, amelyen a gyors letöltési démonod el fog indulni.");
 define('fastdl_ip', "Cím");
-define('fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
+define('fastdl_ip_info', "Az IP cím vagy domain amin a Gyorsletöltési Démon szolgáltatás elindul. A domainek az '/etc/hosts' fájlban listázva kell lennie.");
 define('listing', "Felsorolás");
 define('listing_info', "Ha 'bekapcsolva', a szerver listázni fogja a mappák tartalmát.");
 define('fast_dl_advanced', "További beállítások");
