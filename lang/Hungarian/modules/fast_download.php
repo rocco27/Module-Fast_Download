@@ -47,7 +47,7 @@ define('fast_download_daemon_running', "A gyors letöltés démon fut.");
 define('fast_download_daemon_not_running', "A gyors letöltés démon nem fut.");
 define('fastdl_could_not_be_restarted', "A gyors letöltés szolgáltatást nem lehet újraindítani.");
 define('configuration_file_could_not_be_written', "A konfigurációs fájl nem írható.");
-define('remove_folders', "Mappa eltávolítása a kiválasztott álnevek.");
+define('remove_folders', "Mappa eltávolítása a kiválasztott álnevektől.");
 define('remove_folder', "Könyvtár eltávolítása");
 define('delete_alias', "Álvév törlése");
 define('no_game_homes_assigned', "No game servers assigned for you. You need to ask your OGP admin to assign games for you.");
