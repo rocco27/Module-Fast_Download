@@ -50,7 +50,7 @@ define('configuration_file_could_not_be_written', "A konfigurációs fájl nem �
 define('remove_folders', "Mappa eltávolítása a kiválasztott álnevektől.");
 define('remove_folder', "Könyvtár eltávolítása");
 define('delete_alias', "Álvév törlése");
-define('no_game_homes_assigned', "No game servers assigned for you. You need to ask your OGP admin to assign games for you.");
+define('no_game_homes_assigned', "Nincsenek játék szerverek hozzád rendelve. Meg kell kérdned az OGP Admint, hogy rendeljen játékot hozzád.");
 define('select_remote_server', "Válassz távoli szervert");
 define('access_rules', "Hozzáférési szabályok");
 define('create_aliases', "Álnév létrehozása");
