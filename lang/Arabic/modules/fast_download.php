@@ -2,7 +2,7 @@
 /*
  *
  * OGP - Open Game Panel
- * Copyright (C) 2008 - 2016 The OGP Development Team
+ * Copyright (C) 2008 - 2017 The OGP Development Team
  *
  * http://www.opengamepanel.org/
  *
@@ -35,17 +35,17 @@ define('current_aliases_at_remote_server', "الأسماء المستعارة ا
 define('delete_selected_aliases', "حذف الأسماء المستعارة المحددة");
 define('no_aliases_defined', "لا توجد أسماء مستعارة على شبكة الإنترنت تحددها OGP لسيرفر التحكم.");
 define('fastdl_port', "بورت");
-define('fastdl_port_info', "Port on which your Fast Download server will start.");
+define('fastdl_port_info', "البورت الذي سيبدأ خادم التحميل السريع الخاص بك.");
 define('fastdl_ip', "عنوان");
-define('fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
+define('fastdl_ip_info', "عنوان الأي بي أو المجال الذي سيبدأ فيه خادم التحميل السريع، يجب أن يكون المجال مدرجا في / /etc/hosts.");
 define('listing', "قائمة");
 define('listing_info', "If 'on', the server will list the contents of folders.");
-define('fast_dl_advanced', "Advanced Settings");
-define('apply_settings_and_restart_fastdl', "Save the daemon configuration and restart it");
+define('fast_dl_advanced', "إعدادات متقدمة");
+define('apply_settings_and_restart_fastdl', "حفظ التكوين الخفي وإعادة تشغيله");
 define('stop_fastdl', "Stop Fast Download Daemon.");
 define('fast_download_daemon_running', "Fast Download Daemon is running.");
 define('fast_download_daemon_not_running', "Fast Download Daemon is not running.");
-define('fastdl_could_not_be_restarted', "The Fast Download service could not be restarted.");
+define('fastdl_could_not_be_restarted', "تعذر إعادة تشغيل خدمة التحميل السريع.");
 define('configuration_file_could_not_be_written', "The configuration file could not be written.");
 define('remove_folders', "Remove folder for selected aliases.");
 define('remove_folder', "إزالة المجلد");
@@ -62,12 +62,12 @@ define('match_client_ip', "Match client IP");
 define('match_client_ip_info', "Connections with matching IP will be granted,<br>blank for unrestricted access. You can use<br>multiple IPs or ranges separated by coma:<br>/xx subnets<br>Example: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br>Example: 10.0.0.0/255.0.0.0<br>Hyphen ranges<br>Example: 10.0.0.5-230<br>Asterisk matching<br>Example: 10.0.*.*");
 define('save_access_rules', "حفظ قواعد الوصول");
 define('create_access_rules', "إنشاء قواعد الوصول");
-define('invalid_entries_found', "Invalid entries found");
+define('invalid_entries_found', "تم العثور على إدخالات غير صالحة");
 define('game_name', "إسم اللعبة");
 define('alias_already_exists', "Alias %s already exists.");
 define('warning_access_rules_applied_once_alias_created', "WARNING: Access rules are applied when the alias is created. No changes will be applied to the current aliases.");
-define('autostart_on_agent_startup', "Autostart on Agent startup");
+define('autostart_on_agent_startup', "بدء التشغيل التلقائي على بدء تشغيل الوكيل");
 define('autostart_on_agent_startup_info', "Start the fast download daemon automatically when the Agent starts.");
-define('port_forwarded_to_80', "Port forwarded from 80");
+define('port_forwarded_to_80', "تم توجيه المنفذ من 80");
 define('port_forwarded_to_80_info', "Enable this option if the port configured for this fast download daemon has been forwarded from port 80, so the port will be hidden at URLs.");
 ?>

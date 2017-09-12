@@ -2,7 +2,7 @@
 /*
  *
  * OGP - Open Game Panel
- * Copyright (C) 2008 - 2016 The OGP Development Team
+ * Copyright (C) 2008 - 2017 The OGP Development Team
  *
  * http://www.opengamepanel.org/
  *
@@ -23,7 +23,7 @@
  */
 
 define('create_alias', "Criar pasta");
-define('save_as', "Save As");
+define('save_as', "Salvar como");
 define('failure', "Erro, não conseguiu gerar o arquivo de alias");
 define('success', "Sucesso");
 define('fast_download_service_for', "Downloads serviço de redirecionamento para %s");
@@ -42,32 +42,32 @@ define('listing', "Listagem");
 define('listing_info', "Se 'online', o servidor irá listar o conteúdo das pastas.");
 define('fast_dl_advanced', "Configurações Avançadas");
 define('apply_settings_and_restart_fastdl', "Salve a configuração do daemon e reinicie-a");
-define('stop_fastdl', "Stop Fast Download Daemon.");
-define('fast_download_daemon_running', "Fast Download Daemon is running.");
-define('fast_download_daemon_not_running', "Fast Download Daemon is not running.");
-define('fastdl_could_not_be_restarted', "The Fast Download service could not be restarted.");
-define('configuration_file_could_not_be_written', "The configuration file could not be written.");
-define('remove_folders', "Remove folder for selected aliases.");
-define('remove_folder', "Remove folder");
-define('delete_alias', "Delete alias");
-define('no_game_homes_assigned', "No game servers assigned for you. You need to ask your OGP admin to assign games for you.");
-define('select_remote_server', "Select remote server");
-define('access_rules', "Access rules");
-define('create_aliases', "Create Aliases");
-define('select_game', "Select game");
-define('games_without_specified_rules', "Games without specified rules");
-define('match_file_extension', "Match file extension");
-define('match_file_extension_info', "Specify extensions separated by coma,<br> the matching files will be accessible.<br><b>Blank for unrestricted access</b>.");
-define('match_client_ip', "Match client IP");
-define('match_client_ip_info', "Connections with matching IP will be granted,<br>blank for unrestricted access. You can use<br>multiple IPs or ranges separated by coma:<br>/xx subnets<br>Example: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br>Example: 10.0.0.0/255.0.0.0<br>Hyphen ranges<br>Example: 10.0.0.5-230<br>Asterisk matching<br>Example: 10.0.*.*");
-define('save_access_rules', "Save access rules");
-define('create_access_rules', "Create access rules");
-define('invalid_entries_found', "Invalid entries found");
-define('game_name', "Game name");
-define('alias_already_exists', "Alias %s already exists.");
-define('warning_access_rules_applied_once_alias_created', "WARNING: Access rules are applied when the alias is created. No changes will be applied to the current aliases.");
-define('autostart_on_agent_startup', "Autostart on Agent startup");
-define('autostart_on_agent_startup_info', "Start the fast download daemon automatically when the Agent starts.");
-define('port_forwarded_to_80', "Port forwarded from 80");
-define('port_forwarded_to_80_info', "Enable this option if the port configured for this fast download daemon has been forwarded from port 80, so the port will be hidden at URLs.");
+define('stop_fastdl', "Parar Fast Download Daemon.");
+define('fast_download_daemon_running', "Fast Download Daemon esta em execução.");
+define('fast_download_daemon_not_running', "Fast Download  Daemon não está sendo executado.");
+define('fastdl_could_not_be_restarted', "O serviço The Fast Download rápido não pôde ser reiniciado.");
+define('configuration_file_could_not_be_written', "O arquivo de configuração não pôde ser escrito.");
+define('remove_folders', "Remova a pasta para alias selecionados.");
+define('remove_folder', "Remover pasta");
+define('delete_alias', "Apagar alias");
+define('no_game_homes_assigned', "Nenhum servidor de jogos foi atribuído para você. Você precisa pedir ao seu administrador do painel para atribuir jogos para você.");
+define('select_remote_server', "Selecione o servidor remoto");
+define('access_rules', "Regras de acesso");
+define('create_aliases', "Criar Alias");
+define('select_game', "Selecione o jogo");
+define('games_without_specified_rules', "Jogos sem regras especificadas");
+define('match_file_extension', "Extensão de arquivo de correspondência");
+define('match_file_extension_info', "Especificar extensões separadas por coma, <br> os arquivos correspondentes serão acessíveis.<br><b> Branco para acesso irrestrito </b>.");
+define('match_client_ip', "Corresponde ao IP do cliente");
+define('match_client_ip_info', "As conexões com IP correspondente serão concedidas,<br>Em branco para acesso irrestrito. Você pode usar<br>Múltiplos IPs ou intervalos separados pelo coma:<br>/xx subnets<br>Exemplo: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br> Exemplo: 10.0.0.0/255.0.0.0<br>Faixas de hífen<br>Exemplo: 10.0.0.5-230<br>Correspondência de asterisco<br>Exemplo: 10.0.*.*");
+define('save_access_rules', "Salvar regras de acesso");
+define('create_access_rules', "Criar regras de acesso");
+define('invalid_entries_found', "Entradas inválidas encontradas");
+define('game_name', "Nome do jogo");
+define('alias_already_exists', "Alias %s já existe.");
+define('warning_access_rules_applied_once_alias_created', "AVISO: as regras de acesso são aplicadas quando o alias é criado. Nenhuma alteração será aplicada aos alias atuais.");
+define('autostart_on_agent_startup', "Autostart na inicialização do agente");
+define('autostart_on_agent_startup_info', "Inicie a tarefa de download rápido automaticamente quando o Agente começar.");
+define('port_forwarded_to_80', "Porto reencaminhado de 80");
+define('port_forwarded_to_80_info', "Ative esta opção se a porta configurada para esta tarefa de download rápido tiver sido encaminhada da porta 80, portanto a porta será escondida em URLs.");
 ?>
