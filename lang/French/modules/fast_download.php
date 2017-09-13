@@ -35,7 +35,7 @@ define('current_aliases_at_remote_server', "Alias actuels du serveur distant");
 define('delete_selected_aliases', "Supprimer les Alias sélectionnés");
 define('no_aliases_defined', "Il n&#39;y a pas encore d&#39;Alias créés pour ce serveur.");
 define('fastdl_port', "Port");
-define('fastdl_port_info', "Le port sur lequel le serveur de redirection FastDL va démarrer.");
+define('fastdl_port_info', "Port on which your Fast Download Daemon will start.");
 define('fastdl_ip', "Adresse");
 define('fastdl_ip_info', "L&apos;adresse IP ou le domaine sur lequel le serveur de redirection FastDL va démarrer, le domaine doit être listé dans le fichier /etc/hosts.");
 define('listing', "Liste");

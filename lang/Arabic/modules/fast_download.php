@@ -35,7 +35,7 @@ define('current_aliases_at_remote_server', "الأسماء المستعارة ا
 define('delete_selected_aliases', "حذف الأسماء المستعارة المحددة");
 define('no_aliases_defined', "لا توجد أسماء مستعارة على شبكة الإنترنت تحددها OGP لسيرفر التحكم.");
 define('fastdl_port', "بورت");
-define('fastdl_port_info', "البورت الذي سيبدأ خادم التحميل السريع الخاص بك.");
+define('fastdl_port_info', "Port on which your Fast Download Daemon will start.");
 define('fastdl_ip', "عنوان");
 define('fastdl_ip_info', "عنوان الأي بي أو المجال الذي سيبدأ فيه خادم التحميل السريع، يجب أن يكون المجال مدرجا في / /etc/hosts.");
 define('listing', "قائمة");

@@ -35,7 +35,7 @@ define('current_aliases_at_remote_server', "Bieżące aliasy na serwerze hosta")
 define('delete_selected_aliases', "Usuń wybrane aliasy");
 define('no_aliases_defined', "Nie istnieją jeszcze aliasy zdefiniowane przez OGP dla tego serwera hosta.");
 define('fastdl_port', "Port");
-define('fastdl_port_info', "Port na którym będzie działał/nasłuchiwał Fast Download.");
+define('fastdl_port_info', "Port on which your Fast Download Daemon will start.");
 define('fastdl_ip', "Adres");
 define('fastdl_ip_info', "Adres IP lub domeny, w której twój serwer Fast Download będzie działał, domena musi znajdować się w /etc/hosts.");
 define('listing', "Lista");

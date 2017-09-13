@@ -35,7 +35,7 @@ define('current_aliases_at_remote_server', "Текущие аляс на уда�
 define('delete_selected_aliases', "Удалить выбранные алясы");
 define('no_aliases_defined', "Нет никаких сетевых алясов, определенных OGP для этого удаленного сервера.");
 define('fastdl_port', "Порт");
-define('fastdl_port_info', "Порт, на котором будет запущен ваш сервер быстрой загрузки 'Fast Download'.");
+define('fastdl_port_info', "Port on which your Fast Download Daemon will start.");
 define('fastdl_ip', "Адрес");
 define('fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
 define('listing', "Список");
