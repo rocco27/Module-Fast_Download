@@ -30,22 +30,22 @@ define('fast_download_service_for', "Service de redirection de téléchargements
 define('to_the_path', "Dans le dossier");
 define('at_url', "à l&#39;URL");
 define('create_alias_for', "Créer un Alias pour");
-define('fast_dl', "Redirection de téléchargements (FastDL)");
+define('fast_dl', "Redirection de téléchargements (Fast Download)");
 define('current_aliases_at_remote_server', "Alias actuels du serveur distant");
 define('delete_selected_aliases', "Supprimer les Alias sélectionnés");
 define('no_aliases_defined', "Il n&#39;y a pas encore d&#39;Alias créés pour ce serveur.");
 define('fastdl_port', "Port");
-define('fastdl_port_info', "Le port sur lequel le serveur de redirection FastDL va démarrer.");
+define('fastdl_port_info', "Le port sur lequel le serveur de redirection Fast Download va démarrer.");
 define('fastdl_ip', "Adresse");
-define('fastdl_ip_info', "L&apos;adresse IP ou le domaine sur lequel le serveur de redirection FastDL va démarrer, le domaine doit être listé dans le fichier /etc/hosts.");
+define('fastdl_ip_info', "L&apos;adresse IP ou le domaine sur lequel le serveur de Fast Download va démarrer, le domaine doit être listé dans le fichier /etc/hosts.");
 define('listing', "Liste");
 define('listing_info', "Si elle est activée, le serveur va lister le contenu des dossiers.");
-define('fast_dl_advanced', "Configuration avancée de FastDL");
+define('fast_dl_advanced', "Configuration avancée de Fast Download");
 define('apply_settings_and_restart_fastdl', "Mises à jour de la configuration et redémarre");
-define('stop_fastdl', "Arrêter le service FastDL.");
-define('fast_download_daemon_running', "Le service FastDL est en cours d'exécution.");
-define('fast_download_daemon_not_running', "Le service FastDL est arrêté.");
-define('fastdl_could_not_be_restarted', "Impossible de redémarrer le service FastDL.");
+define('stop_fastdl', "Arrêter le service Fast Download.");
+define('fast_download_daemon_running', "Le service Fast Download est en cours d'exécution.");
+define('fast_download_daemon_not_running', "Le service Fast Download est arrêté.");
+define('fastdl_could_not_be_restarted', "Impossible de redémarrer le service Fast Download.");
 define('configuration_file_could_not_be_written', "Impossible d'écrire le fichier de configuration.");
 define('remove_folders', "Retirer le dossier pour les Alias sélectionnés.");
 define('remove_folder', "Supprimer le dossier");
@@ -69,5 +69,5 @@ define('warning_access_rules_applied_once_alias_created', "AVERTISSEMENT: Les r�
 define('autostart_on_agent_startup', "Démarrer avec l&apos;Agent");
 define('autostart_on_agent_startup_info', "Démarrer automatiquement la deamon Fast Download au lancement de l&apos;Agent");
 define('port_forwarded_to_80', "Port redirigé depuis 80");
-define('port_forwarded_to_80_info', "Activer cette option si le port configuré pour le deamon FastDL a été redirigé depuis le port 80, comme ça le port sera caché dans les URLs.");
+define('port_forwarded_to_80_info', "Activer cette option si le port configuré pour le deamon Fast Download a été redirigé depuis le port 80, comme ça le port sera caché dans les URLs.");
 ?>
