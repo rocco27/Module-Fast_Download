@@ -35,7 +35,7 @@ define('current_aliases_at_remote_server', "Aktuelle Aliase auf dem entfernten S
 define('delete_selected_aliases', "Ausgewählte Aliase löschen");
 define('no_aliases_defined', "Derzeit wurde kein Web-Alias via OGP für diesen Remote Server definiert.");
 define('fastdl_port', "Port");
-define('fastdl_port_info', "Port on which your Fast Download Daemon will start.");
+define('fastdl_port_info', "Port, auf dem der Fast Download Daemon gestartet wird.");
 define('fastdl_ip', "Adresse");
 define('fastdl_ip_info', "Die IP Addresse oder Domain Name, in welchem Ihr Fast Download Server starten möchte, muss unter /etc/hosts aufgeführt sein.");
 define('listing', "Auflistung");
@@ -66,8 +66,8 @@ define('invalid_entries_found', "Ungültige Einträge gefunden");
 define('game_name', "Spielname");
 define('alias_already_exists', "Alias %s existiert bereits.");
 define('warning_access_rules_applied_once_alias_created', "WARNUNG: beim Erstellen des Alias werden Zugriffsregeln angewendet. Auf die aktuellen Aliase werden keine Änderungen übernommen.");
-define('autostart_on_agent_startup', "Autostart on Agent startup");
-define('autostart_on_agent_startup_info', "Start the fast download daemon automatically when the Agent starts.");
+define('autostart_on_agent_startup', "Autostart beim Agentenstart");
+define('autostart_on_agent_startup_info', "Starten Sie den schnellen Download Daemon automatisch, wenn der Agent startet.");
 define('port_forwarded_to_80', "Port weitergeleitet von 80");
 define('port_forwarded_to_80_info', "Aktivieren Sie diese Option, wenn der für diesen FastDL Daemon konfigurierte Port von Port 80 aus weitergeleitet wurde, sodass der Port bei URLs verborgen bleibt.");
 ?>
