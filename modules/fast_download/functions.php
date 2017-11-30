@@ -57,7 +57,7 @@ function get_access_rules($home_cfg_id = "")
 	else
 	{
 		$result = $db->resultQuery("SELECT * FROM `".OGP_DB_PREFIX."fastdl_access_rules` 
-									WHERE `home_cfg_id`='".$home_cfg_id."'");
+									WHERE `home_cfg_id`='".$db->realEscapeSingle($home_cfg_id)."'");
 		if($result === FALSE)
 		{
 			$result = $db->resultQuery("SELECT * FROM `".OGP_DB_PREFIX."fastdl_access_rules` 
@@ -73,26 +73,26 @@ function set_access_rule($home_cfg_id, $match_file_extension, $match_client_ip)
 {
 	global $db;
 	if (!$db->resultQuery("SELECT * FROM `".OGP_DB_PREFIX."fastdl_access_rules` 
-								WHERE `home_cfg_id`='".$home_cfg_id."'"))
+								WHERE `home_cfg_id`='".$db->realEscapeSingle($home_cfg_id)."'"))
 	{
 		if($match_file_extension == "" and  $match_client_ip == "")
 			return TRUE;
 		return $db->query("INSERT INTO `".OGP_DB_PREFIX."fastdl_access_rules`
 						  (`home_cfg_id`,`match_file_extension`,`match_client_ip`)
-						  VALUES('$home_cfg_id','$match_file_extension','$match_client_ip');");
+						  VALUES('" . $db->realEscapeSingle($home_cfg_id) . "','" . $db->realEscapeSingle($match_file_extension) . "','" . $db->realEscapeSingle($match_client_ip) . "');");
 	}
 	else
 	{
 		if($match_file_extension == "" and  $match_client_ip == "")
 		{
-			return $db->query("DELETE FROM `".OGP_DB_PREFIX."fastdl_access_rules` WHERE `home_cfg_id`='$home_cfg_id';");
+			return $db->query("DELETE FROM `".OGP_DB_PREFIX."fastdl_access_rules` WHERE `home_cfg_id`='" . $db->realEscapeSingle($home_cfg_id) . "';");
 		}
 		else
 		{
 			return $db->query("UPDATE `".OGP_DB_PREFIX."fastdl_access_rules` 
-							  SET `match_file_extension`='$match_file_extension',
-								  `match_client_ip`='$match_client_ip'
-							  WHERE `home_cfg_id`='$home_cfg_id';");
+							  SET `match_file_extension`='" . $db->realEscapeSingle($match_file_extension) . "',
+								  `match_client_ip`='" . $db->realEscapeSingle($match_client_ip) . "'
+							  WHERE `home_cfg_id`='" . $db->realEscapeSingle($home_cfg_id) . "';");
 		}
 	}
 }
@@ -100,7 +100,7 @@ function set_access_rule($home_cfg_id, $match_file_extension, $match_client_ip)
 function del_access_rule($home_cfg_id)
 {
 	global $db;
-	return $db->query("DELETE FROM `".OGP_DB_PREFIX."fastdl_access_rules` WHERE `home_cfg_id`='$home_cfg_id';");
+	return $db->query("DELETE FROM `".OGP_DB_PREFIX."fastdl_access_rules` WHERE `home_cfg_id`='" . $db->realEscapeSingle($home_cfg_id) . "';");
 }
 
 function check_access_rules_entries()
@@ -166,7 +166,7 @@ function get_fastdl_settings($remote_server_id)
 	global $db;
 	if( !is_numeric($remote_server_id) ) return FALSE;
 	$result = $db->resultQuery("SELECT `setting`,`value` FROM `".OGP_DB_PREFIX."fastdl_settings` 
-								WHERE `remote_server_id`='".$remote_server_id."'");
+								WHERE `remote_server_id`='".$db->realEscapeSingle($remote_server_id)."'");
 	if(!$result) return FALSE;
 	$results = array();
 	foreach($result as $row)
@@ -185,8 +185,8 @@ function set_fastdl_settings($remote_server_id, $settings)
 	foreach ( $settings as $s_key => $s_value )
 	{
 		$query = 'INSERT INTO `'.OGP_DB_PREFIX.'fastdl_settings` (`remote_server_id`,`setting`,`value`)
-			VALUES(\''.$remote_server_id.'\', \''.$s_key.'\', \''.$s_value.'\') ON DUPLICATE KEY
-			UPDATE value=\''.$s_value.'\'';
+			VALUES(\''.$db->realEscapeSingle($remote_server_id).'\', \''.$db->realEscapeSingle($s_key).'\', \''.$db->realEscapeSingle($s_value).'\') ON DUPLICATE KEY
+			UPDATE value=\''.$db->realEscapeSingle($s_value).'\'';
 		$db->query($query);
 	}
 	return TRUE;
