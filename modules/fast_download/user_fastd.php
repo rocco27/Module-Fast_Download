@@ -28,7 +28,7 @@ require_once('modules/fast_download/functions.php');
 function exec_ogp_module() 
 {
 	global $db,$view;
-	echo "<h2>".fast_dl."</h2>\n";
+	echo "<h2>".get_lang("fast_dl")."</h2>\n";
 	$isAdmin = $db->isAdmin($_SESSION['user_id']);
 	if($isAdmin)
 		$server_homes = $db->getIpPorts();
@@ -36,10 +36,10 @@ function exec_ogp_module()
 		$server_homes = $db->getIpPortsForUser($_SESSION['user_id']);
 	if( $server_homes === FALSE )
 	{
-		print_failure(no_game_homes_assigned);
+		print_failure(get_lang("no_game_homes_assigned"));
 		return;
 	}
-	echo "<p>".create_alias_for." :</p>";
+	echo "<p>".get_lang("create_alias_for")." :</p>";
 	create_home_selector_address($_GET['m'], $_GET['p'], $server_homes);
 
 	if( isset( $_GET['home_id-mod_id-ip-port'] ) and $_GET['home_id-mod_id-ip-port'] != "" )
@@ -92,11 +92,11 @@ function exec_ogp_module()
 				$rules = get_access_rules($server_home['home_cfg_id']);
 				if( $remote->fastdl_add_alias($alias,$home,$rules['match_file_extension'],$rules['match_client_ip']) == 1 )
 				{
-					print_success(success);
+					print_success(get_lang("success"));
 				}
 				else
 				{
-					print_failure(failure);
+					print_failure(get_lang("failure"));
 				}
 			}
 			else
@@ -109,28 +109,28 @@ function exec_ogp_module()
 		{
 			$home = clean_path("/".preg_replace("#".preg_quote($server_home['home_path'])."#", "", $alias_info['home']));
 			$url = "<a href='http://$address/".$alias_info['alias']."' target='_blank' >http://$address/".$alias_info['alias']."</a>";
-			echo "<p>".at_url.
+			echo "<p>".get_lang("at_url").
 				 " : <b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >$url</b></p><p>".
-				 to_the_path.
+				 get_lang("to_the_path").
 				 " : <b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >".$home."</b></p>".
 				 "<form method=POST >".
 				 "<input type=hidden name=rmalias value='".$alias_info['alias']."'/>".
-				 "<input type=checkbox name=remove />".remove_folder."<br>".
-				 "<input type=submit name=delete value='".delete_alias."' />".
+				 "<input type=checkbox name=remove />".get_lang("remove_folder")."<br>".
+				 "<input type=submit name=delete value='".get_lang("delete_alias")."' />".
 				 "</form>";
 		}
 		else
 		{
-			echo "<form method=POST ><p>".at_url.
+			echo "<form method=POST ><p>".get_lang("at_url").
 				 " :</p><b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >http://$address/</b>".
 				 "<input type=text name=alias value='$alias' /><br><p>".
-				 to_the_path." :</p><b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
+				 get_lang("to_the_path")." :</p><b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >/</b>".
 				 "<input type=text name=path value='$path' /><br>".
-				 "<input type=submit name=create value='".create_alias
+				 "<input type=submit name=create value='".get_lang("create_alias")
 				 ."'/>\n</form>";
 		}
 	} 

@@ -109,7 +109,7 @@ function check_access_rules_entries()
 	$match_client_ip = "";
 	$ip_entry_fail = FALSE;
 	$extension_entry_fail = FALSE;
-	$failures = invalid_entries_found.":<br>";
+	$failures = get_lang("invalid_entries_found").":<br>";
 	if($_POST['match_file_extension'] != "")
 	{
 		$entries = explode(",",$_POST['match_file_extension']);
