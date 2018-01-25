@@ -213,7 +213,7 @@ function exec_ogp_module()
 				 "<option></option>\n";
 			foreach ( $remote_servers as $server )
 			{
-				$display_ip = checkDisplayPublicIP($server['display_public_ip'],$server['agent_ip']);
+				$display_ip = checkDisplayPublicIP($server['display_public_ip'],$server['ip'] != $server['agent_ip'] ? $server['ip'] : $server['agent_ip']);
 				$selected = ( isset( $_GET['remote_server_id'] ) and 
 							  $server['remote_server_id'] == $_GET['remote_server_id'] ) ? 
 							  "selected=selected" : "";
@@ -347,7 +347,7 @@ function exec_ogp_module()
 				if( preg_match("/^(127|0)/",$fastdl_info['ip']) )
 					$fastdl_info['ip'] = $server_home['agent_ip'];
 
-				$fastdl_display_ip = checkDisplayPublicIP($server_home['display_public_ip'],$fastdl_info['ip']);
+				$fastdl_display_ip = checkDisplayPublicIP($server_home['display_public_ip'],$server_home['ip'] != $fastdl_info['ip'] ? $server_home['ip'] : $fastdl_info['ip']);
 
 				$address = ($fastdl_info['port'] == '80' OR ($fastdl_settings and $fastdl_settings['port_forwarded_to_80'] == '1')) ? $fastdl_display_ip : $fastdl_display_ip.":".$fastdl_info['port'];
 				$alias = isset( $_POST['alias'] ) ? $_POST['alias'] : str_replace(".","_",$ip)."_$port";
