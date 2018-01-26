@@ -30,7 +30,7 @@ define('OGP_LANG_fast_download_service_for', "Serviço de redireccionamento de d
 define('OGP_LANG_to_the_path', "Para o caminho");
 define('OGP_LANG_at_url', "no URL");
 define('OGP_LANG_create_alias_for', "Criar alias para");
-define('OGP_LANG_fast_dl', "Redirecionar downloads (FastDL)");
+define('OGP_LANG_fast_dl', "Redirecionar downloads (FastDownload)");
 define('OGP_LANG_current_aliases_at_remote_server', "Alias ​​atuais no servidor remoto");
 define('OGP_LANG_delete_selected_aliases', "Eliminar alias selecionadas");
 define('OGP_LANG_no_aliases_defined', "Ainda não existem aliases da Web definidos pelo painel para este servidor remoto.");
