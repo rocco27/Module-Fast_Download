@@ -162,7 +162,7 @@ function exec_ogp_module()
 			$ft1 = new FormTable();
 			$ft1->start_form("?m=fast_download&remote_server_id=".$_GET['remote_server_id'] , "post");
 			$ft1->add_field_hidden("stop_fastdl", '');
-			$ft1->add_button("submit","stop_fastdl",stop_fastdl);
+			$ft1->add_button("submit","stop_fastdl",get_lang("stop_fastdl"));
 			$ft1->end_form();
 			$ft1->start_form("?m=fast_download&remote_server_id=".$_GET['remote_server_id'] , "post");
 			$ft1->start_table();
