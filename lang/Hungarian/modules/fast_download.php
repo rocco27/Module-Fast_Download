@@ -42,7 +42,7 @@ define('OGP_LANG_listing', "Felsorolás");
 define('OGP_LANG_listing_info', "Ha 'bekapcsolva', a szerver listázni fogja a mappák tartalmát.");
 define('OGP_LANG_fast_dl_advanced', "További beállítások");
 define('OGP_LANG_apply_settings_and_restart_fastdl', "Mentsd a démon konfigurációját és indítsd újra");
-define('OGP_LANG_stop_fastdl', "Gyors letöltési démon leállítása.");
+define('OGP_LANG_stop_fastdl', "Stop Fast Download Daemon");
 define('OGP_LANG_fast_download_daemon_running', "A gyors letöltés démon fut.");
 define('OGP_LANG_fast_download_daemon_not_running', "A gyors letöltés démon nem fut.");
 define('OGP_LANG_fastdl_could_not_be_restarted', "A gyors letöltés szolgáltatást nem lehet újraindítani.");

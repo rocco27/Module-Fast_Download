@@ -42,7 +42,7 @@ define('OGP_LANG_listing', "Liste");
 define('OGP_LANG_listing_info', "Si elle est activée, le serveur va lister le contenu des dossiers.");
 define('OGP_LANG_fast_dl_advanced', "Configuration avancée de Fast Download");
 define('OGP_LANG_apply_settings_and_restart_fastdl', "Mises à jour de la configuration et redémarre");
-define('OGP_LANG_stop_fastdl', "Arrêter le service Fast Download.");
+define('OGP_LANG_stop_fastdl', "Arrêter le service Fast Download");
 define('OGP_LANG_fast_download_daemon_running', "Le service Fast Download est en cours d'exécution.");
 define('OGP_LANG_fast_download_daemon_not_running', "Le service Fast Download est arrêté.");
 define('OGP_LANG_fastdl_could_not_be_restarted', "Impossible de redémarrer le service Fast Download.");

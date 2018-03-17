@@ -42,7 +42,7 @@ define('OGP_LANG_listing', "Listagem");
 define('OGP_LANG_listing_info', "Se 'online', o servidor irá listar o conteúdo das pastas.");
 define('OGP_LANG_fast_dl_advanced', "Configurações Avançadas");
 define('OGP_LANG_apply_settings_and_restart_fastdl', "Guarde as configurações principais e importantes antes, depois poderá reiniciar");
-define('OGP_LANG_stop_fastdl', "Parar a tarefa de Download Rápido.");
+define('OGP_LANG_stop_fastdl', "Parar a tarefa do FastDownload");
 define('OGP_LANG_fast_download_daemon_running', "A tarefa do Fast Download já esta em execução.");
 define('OGP_LANG_fast_download_daemon_not_running', "A tarefa do Fast Download  não está a ser executada.");
 define('OGP_LANG_fastdl_could_not_be_restarted', "O serviço Fast Download não pôde ser reiniciado.");

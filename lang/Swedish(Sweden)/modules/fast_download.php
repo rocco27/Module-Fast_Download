@@ -42,7 +42,7 @@ define('OGP_LANG_listing', "Lista");
 define('OGP_LANG_listing_info', "Om \"på\", kommer servern lista innehållet i mappar. ");
 define('OGP_LANG_fast_dl_advanced', "Avancerade alternativ");
 define('OGP_LANG_apply_settings_and_restart_fastdl', "Spara daemon-konfigurationen och starta om den ");
-define('OGP_LANG_stop_fastdl', "Stoppa Snabbnedladdnings-daemon.");
+define('OGP_LANG_stop_fastdl', "Stop Fast Download Daemon");
 define('OGP_LANG_fast_download_daemon_running', "Snabbnedladdnings-daemonen körs. ");
 define('OGP_LANG_fast_download_daemon_not_running', "Snabbnedladdnings-daemonen körs inte. ");
 define('OGP_LANG_fastdl_could_not_be_restarted', "Snabbnedladdnings-tjänsten kunde inte startas om. ");

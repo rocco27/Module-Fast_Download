@@ -22,27 +22,27 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Создайте аляс и папку");
+define('OGP_LANG_create_alias', "Создайте альяс и папку");
 define('OGP_LANG_save_as', "Сохранить как...");
-define('OGP_LANG_failure', "Ошибка, не удалось сгенерировать файл аляса");
+define('OGP_LANG_failure', "Ошибка, не удалось сгенерировать файл альяса");
 define('OGP_LANG_success', "Успешно");
 define('OGP_LANG_fast_download_service_for', "Служба перенаправления загрузок для %s");
 define('OGP_LANG_to_the_path', "Путь к файлам");
 define('OGP_LANG_at_url', "URL-адрес");
-define('OGP_LANG_create_alias_for', "Создать аляс для");
+define('OGP_LANG_create_alias_for', "Создать альяс для");
 define('OGP_LANG_fast_dl', "Перенаправление загрузки (FastDL)");
-define('OGP_LANG_current_aliases_at_remote_server', "Текущие аляс на удаленном сервере");
-define('OGP_LANG_delete_selected_aliases', "Удалить выбранные алясы");
-define('OGP_LANG_no_aliases_defined', "Нет никаких сетевых алясов, определенных OGP для этого удаленного сервера.");
+define('OGP_LANG_current_aliases_at_remote_server', "Текущие альяс на удаленном сервере");
+define('OGP_LANG_delete_selected_aliases', "Удалить выбранные альясы");
+define('OGP_LANG_no_aliases_defined', "Нет никаких сетевых альясов, определенных OGP для этого удаленного сервера.");
 define('OGP_LANG_fastdl_port', "Порт");
 define('OGP_LANG_fastdl_port_info', "Порт, на котором будет запущен ваш сервер быстрой загрузки 'Fast Download'.");
 define('OGP_LANG_fastdl_ip', "Адрес");
-define('OGP_LANG_fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
+define('OGP_LANG_fastdl_ip_info', "IP-адрес или домен, в котором будет запущен ваш сервер Fast Download, должен быть указан в /etc/hosts.");
 define('OGP_LANG_listing', "Список");
 define('OGP_LANG_listing_info', "Если «включено», сервер отобразит содержимое папок.");
 define('OGP_LANG_fast_dl_advanced', "Расширенные настройки");
 define('OGP_LANG_apply_settings_and_restart_fastdl', "Сохраните конфигурацию службы и перезапустите его.");
-define('OGP_LANG_stop_fastdl', "Остановить службу Fast Download");
+define('OGP_LANG_stop_fastdl', "Stop Fast Download Daemon");
 define('OGP_LANG_fast_download_daemon_running', "Служба Быстрой загрузки 'Fast Download' запущена.");
 define('OGP_LANG_fast_download_daemon_not_running', "Служба Быстрой загрузки 'Fast Download' НЕ запущена.");
 define('OGP_LANG_fastdl_could_not_be_restarted', "Службу Быстрой загрузки 'Fast Download' не удалось перезапустить.");
