@@ -29,17 +29,17 @@ require('includes/form_table_class.php');
 function exec_ogp_module()
 {
 	global $db,$view;
-	echo "<h2>".fast_dl."</h2>\n";
+	echo "<h2>".get_lang("fast_dl")."</h2>\n";
 	$remote_servers = $db->getRemoteServers();
 	if ( !$remote_servers )
 		return;
 	if(isset($_GET['access_rules']))
 	{
-		echo "<h3>".create_access_rules."</h3>\n";
-		echo print_failure(warning_access_rules_applied_once_alias_created);
+		echo "<h3>".get_lang("create_access_rules")."</h3>\n";
+		echo print_failure(get_lang("warning_access_rules_applied_once_alias_created"));
 		$game_cfgs = $db->getGameCfgs();
 		$select_game = "<select onchange=".'"this.form.submit()"'." name='home_cfg_id' autofocus='autofocus'>\n".
-					     "<option value='0'>" . games_without_specified_rules . "</option>\n";
+					     "<option value='0'>" . get_lang("games_without_specified_rules") . "</option>\n";
 		foreach ( $game_cfgs as $game_cfg )
 		{
 			$selected = ( isset( $_GET['home_cfg_id'] ) and 
@@ -61,7 +61,7 @@ function exec_ogp_module()
 		$ft1 = new FormTable();
 		$ft1->start_form("home.php" , "get");
 		$ft1->add_field_hidden("m", $_GET['m']);
-		$ft1->add_field_hidden("access_rules", access_rules);
+		$ft1->add_field_hidden("access_rules", get_lang("access_rules"));
 		$ft1->start_table();
 		$ft1->add_custom_field('select_game',$select_game);
 		$ft1->end_table();
@@ -89,7 +89,7 @@ function exec_ogp_module()
 		$ft2->add_field('text','match_file_extension',@$rules['match_file_extension']);
 		$ft2->add_field('text','match_client_ip',@$rules['match_client_ip']);
 		$ft2->end_table();
-		$ft2->add_button("submit","save_access_rules",save_access_rules);
+		$ft2->add_button("submit","save_access_rules",get_lang("save_access_rules"));
 		$ft2->end_form();
 		
 		$all_rules = get_access_rules();
@@ -107,7 +107,7 @@ function exec_ogp_module()
 			<?php
 			echo "<h3>".current_access_rules."</h3>\n";
 			echo "<table id='servermonitor' class='tablesorter' style='width: 100%;'>\n<thead><tr>".
-				 "<th class='header'>".game_name."</th><th class='header'>".match_file_extension."</th><th class='header'>".match_client_ip."</th></tr></thead>\n<tbody>";
+				 "<th class='header'>".get_lang("game_name")."</th><th class='header'>".get_lang("match_file_extension")."</th><th class='header'>".get_lang("match_client_ip")."</th></tr></thead>\n<tbody>";
 			foreach($all_rules as $rule)
 			{
 				if($rule['home_cfg_id'] != '0')
@@ -125,7 +125,7 @@ function exec_ogp_module()
 				}
 				else
 				{
-					$game_name = games_without_specified_rules;
+					$game_name = get_lang("games_without_specified_rules");
 				}
 				echo "<tr class='maintr' ><td><form method=POST style='display:block;float:left;' ><input type='image' src='modules/administration/images/remove.gif' name=remove value=$rule[home_cfg_id] onclick='submit-form();' ></form>$game_name</td><td>$rule[match_file_extension]</td><td>$rule[match_client_ip]</td><tr>\n";
 			}
@@ -137,7 +137,7 @@ function exec_ogp_module()
 	{
 		if(isset( $_GET['advanced'] ) and isset( $_POST['configuration'] ) and isset( $_GET['remote_server_id'] ) and $_GET['remote_server_id'] != "")
 		{
-			echo "<h3>".fast_dl_advanced."</h3>";
+			echo "<h3>".get_lang("fast_dl_advanced")."</h3>";
 			$remote_server_id = $_GET['remote_server_id'];
 			$remote_server = $db->getRemoteServer($remote_server_id);
 			$rserver = $db->getRemoteServerById($remote_server_id);
@@ -162,7 +162,7 @@ function exec_ogp_module()
 			$ft1 = new FormTable();
 			$ft1->start_form("?m=fast_download&remote_server_id=".$_GET['remote_server_id'] , "post");
 			$ft1->add_field_hidden("stop_fastdl", '');
-			$ft1->add_button("submit","stop_fastdl",stop_fastdl);
+			$ft1->add_button("submit","stop_fastdl",get_lang("stop_fastdl"));
 			$ft1->end_form();
 			$ft1->start_form("?m=fast_download&remote_server_id=".$_GET['remote_server_id'] , "post");
 			$ft1->start_table();
@@ -173,7 +173,7 @@ function exec_ogp_module()
 			$ft1->add_field('on_off','port_forwarded_to_80',@$fastdl_settings['port_forwarded_to_80']);
 			$ft1->add_field_hidden("conf_fastdl", '');
 			$ft1->end_table();
-			$ft1->add_button("submit","conf_fastdl",apply_settings_and_restart_fastdl);
+			$ft1->add_button("submit","conf_fastdl",get_lang("apply_settings_and_restart_fastdl"));
 			$ft1->end_form();
 			echo create_back_button($_GET['m']."&remote_server_id=".$_GET['remote_server_id']);
 			?>
@@ -206,14 +206,14 @@ function exec_ogp_module()
 		{
 			echo "<form method=GET >\n".
 				 "<input type='hidden' name='m' value='". $_GET['m'] . "' />\n".
-				 "<input type=submit value='" . access_rules . "' name='access_rules' />\n".
-				 "<input type=submit value='" . create_aliases . "' name='create_aliases' />\n<br>\n".
-				 select_remote_server.": ".
+				 "<input type=submit value='" . get_lang("access_rules") . "' name='access_rules' />\n".
+				 "<input type=submit value='" . get_lang("create_aliases") . "' name='create_aliases' />\n<br>\n".
+				 get_lang("select_remote_server").": ".
 				 "<select onchange=".'"this.form.submit()"'." name='remote_server_id'>\n".
 				 "<option></option>\n";
 			foreach ( $remote_servers as $server )
 			{
-				$display_ip = checkDisplayPublicIP($server['display_public_ip'],$server['agent_ip']);
+				$display_ip = checkDisplayPublicIP($server['display_public_ip'],$server['ip'] != $server['agent_ip'] ? $server['ip'] : $server['agent_ip']);
 				$selected = ( isset( $_GET['remote_server_id'] ) and 
 							  $server['remote_server_id'] == $_GET['remote_server_id'] ) ? 
 							  "selected=selected" : "";
@@ -246,10 +246,10 @@ function exec_ogp_module()
 					{
 						if($remote->restart_fastdl() !== 1)
 						{
-							echo fastdl_could_not_be_restarted;
+							echo get_lang("fastdl_could_not_be_restarted");
 						}
 					}
-					else echo configuration_file_could_not_be_written;
+					else echo get_lang("configuration_file_could_not_be_written");
 					$firewall_settings = $db->getFirewallSettings($remote_server_id);
 					if ($firewall_settings['status'] == "enable")
 					{
@@ -269,7 +269,7 @@ function exec_ogp_module()
 				{
 					if( preg_match("/^(127|0)/",$fastdl_info['ip']) )
 						$fastdl_info['ip'] = $rserver['agent_ip'];
-					echo "<p>".current_aliases_at_remote_server." :</p>";
+					echo "<p>".get_lang("current_aliases_at_remote_server")." :</p>";
 					$aliases = $remote->fastdl_get_aliases();
 					if($aliases !== -1)
 					{
@@ -298,8 +298,8 @@ function exec_ogp_module()
 									 "( <a href='http://$address/$alias' target='_blank' ".
 									 "title='".$info['home']."' >http://$address/$alias</a> )<br>";
 							}
-							echo "<br><input type=checkbox name=remove />".remove_folders."<br>
-								  <input type=submit name=delete value='".delete_selected_aliases."' />
+							echo "<br><input type=checkbox name=remove />".get_lang("remove_folders")."<br>
+								  <input type=submit name=delete value='".get_lang("delete_selected_aliases")."' />
 								  </form>";
 						}
 					}
@@ -307,11 +307,11 @@ function exec_ogp_module()
 						print_success( get_lang("no_aliases_defined") );
 				}
 				if($fd_status !== -1)
-					print_success( fast_download_daemon_running );
+					print_success( get_lang("fast_download_daemon_running") );
 				else
-					print_failure( fast_download_daemon_not_running );
+					print_failure( get_lang("fast_download_daemon_not_running") );
 				echo "<form method=POST action='?m=fast_download&remote_server_id=".$_GET['remote_server_id'].
-					 "&advanced' ><input type=submit name=configuration value='".fast_dl_advanced."'></form>";
+					 "&advanced' ><input type=submit name=configuration value='".get_lang("fast_dl_advanced")."'></form>";
 			}
 			else
 			{
@@ -323,12 +323,12 @@ function exec_ogp_module()
 			$server_homes = $db->getIpPorts();
 			if( $server_homes === FALSE )
 			{
-				print_failure(no_game_homes_assigned);
+				print_failure(get_lang("no_game_homes_assigned"));
 				return;
 			}
-			echo "<table class='center' ><tr><td><b>".create_alias_for.
+			echo "<table class='center' ><tr><td><b>".get_lang("create_alias_for").
 				 " :</b></td><td>";
-			$extra_inputs = array(array('type' => 'hidden','name' => 'create_aliases','value' => create_aliases));
+			$extra_inputs = array(array('type' => 'hidden','name' => 'create_aliases','value' => get_lang("create_aliases")));
 			create_home_selector_address($_GET['m'], "", $server_homes, $extra_inputs);
 			echo "</td></tr></table>";
 			if( isset( $_GET['home_id-mod_id-ip-port'] ) and $_GET['home_id-mod_id-ip-port'] != "" )
@@ -347,7 +347,7 @@ function exec_ogp_module()
 				if( preg_match("/^(127|0)/",$fastdl_info['ip']) )
 					$fastdl_info['ip'] = $server_home['agent_ip'];
 
-				$fastdl_display_ip = checkDisplayPublicIP($server_home['display_public_ip'],$fastdl_info['ip']);
+				$fastdl_display_ip = checkDisplayPublicIP($server_home['display_public_ip'],$server_home['ip'] != $fastdl_info['ip'] ? $server_home['ip'] : $fastdl_info['ip']);
 
 				$address = ($fastdl_info['port'] == '80' OR ($fastdl_settings and $fastdl_settings['port_forwarded_to_80'] == '1')) ? $fastdl_display_ip : $fastdl_display_ip.":".$fastdl_info['port'];
 				$alias = isset( $_POST['alias'] ) ? $_POST['alias'] : str_replace(".","_",$ip)."_$port";
@@ -384,11 +384,11 @@ function exec_ogp_module()
 							$remote->remote_writefile($file, $index);
 							if( $remote->fastdl_add_alias($alias,$home,$_POST['match_file_extension'],$_POST['match_client_ip']) == 1 )
 							{
-								echo "<p class='success' style='text-align:center;' >".success."</p>";
+								echo "<p class='success' style='text-align:center;' >".get_lang("success")."</p>";
 							}
 							else
 							{
-								echo "<p class='failure' style='text-align:center;' >".failure."</p>";
+								echo "<p class='failure' style='text-align:center;' >".get_lang("failure")."</p>";
 							}
 						}
 						else
@@ -405,12 +405,12 @@ function exec_ogp_module()
 					echo "<form method=POST >".
 						 "<input type=hidden name=rmalias value='".$alias_info['alias']."'/>".
 						 "<table class='center'>\n".
-						 "<tr><td align=right >".at_url.": </td><td align=left >$url</td></tr>\n".
-						 "<tr><td align=right >".to_the_path.": </td><td align=left >$alias_info[home]</td></tr>\n".
-						 "<tr><td align=right >".match_file_extension.": </td><td align=left >$alias_info[match_file_extension]</td></tr>\n".
-						 "<tr><td align=right >".match_client_ip.": </td><td align=left >$alias_info[match_client_ip]</td></tr>\n".
-						 "<tr><td align=right ><input type=checkbox name=remove />".remove_folder."</td>".
-						 "<td align=left ><input type=submit name=delete value='".delete_alias."' /></td></tr>\n".
+						 "<tr><td align=right >".get_lang("at_url").": </td><td align=left >$url</td></tr>\n".
+						 "<tr><td align=right >".get_lang("to_the_path").": </td><td align=left >$alias_info[home]</td></tr>\n".
+						 "<tr><td align=right >".get_lang("match_file_extension").": </td><td align=left >$alias_info[match_file_extension]</td></tr>\n".
+						 "<tr><td align=right >".get_lang("match_client_ip").": </td><td align=left >$alias_info[match_client_ip]</td></tr>\n".
+						 "<tr><td align=right ><input type=checkbox name=remove />".get_lang("remove_folder")."</td>".
+						 "<td align=left ><input type=submit name=delete value='".get_lang("delete_alias")."' /></td></tr>\n".
 						 "</table></form>";
 				}
 				else
@@ -428,7 +428,7 @@ function exec_ogp_module()
 					$ft3->add_field('text','match_file_extension',@$rules['match_file_extension']);
 					$ft3->add_field('text','match_client_ip',@$rules['match_client_ip']);
 					$ft3->end_table();
-					$ft3->add_button("submit","create",create_alias);
+					$ft3->add_button("submit","create",get_lang("create_alias"));
 					$ft3->end_form();
 				}
 			}
