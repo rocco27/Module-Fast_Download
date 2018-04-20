@@ -48,7 +48,7 @@ define('OGP_LANG_fast_download_daemon_not_running', "A gyors letöltés démon n
 define('OGP_LANG_fastdl_could_not_be_restarted', "A gyors letöltés szolgáltatást nem lehet újraindítani.");
 define('OGP_LANG_configuration_file_could_not_be_written', "A konfigurációs fájl nem írható.");
 define('OGP_LANG_remove_folders', "Mappa eltávolítása a kiválasztott álnevektől.");
-define('OGP_LANG_remove_folder', "Könyvtár eltávolítása");
+define('OGP_LANG_remove_folder', "Mappa eltávolítása");
 define('OGP_LANG_delete_alias', "Álvév törlése");
 define('OGP_LANG_no_game_homes_assigned', "Nincsenek játék szerverek hozzád rendelve. Meg kell kérdned az OGP Admint, hogy rendeljen játékot hozzád.");
 define('OGP_LANG_select_remote_server', "Válassz távoli szervert");
