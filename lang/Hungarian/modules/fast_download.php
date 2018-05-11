@@ -25,7 +25,7 @@
 define('OGP_LANG_create_alias', "Mappa és álnév létrehozása");
 define('OGP_LANG_save_as', "Mentés mint");
 define('OGP_LANG_failure', "Hiba, nem sikerült az álnév fájl generálása");
-define('OGP_LANG_success', "Sikeres");
+define('OGP_LANG_success', "Siker");
 define('OGP_LANG_fast_download_service_for', "Letöltések átirányítási szolgáltatása a %s-hoz");
 define('OGP_LANG_to_the_path', "To the path");
 define('OGP_LANG_at_url', "URL címen");
