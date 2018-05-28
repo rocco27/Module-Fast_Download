@@ -2,7 +2,7 @@
 /*
  *
  * OGP - Open Game Panel
- * Copyright (C) 2008 - 2017 The OGP Development Team
+ * Copyright (C) 2008 - 2018 The OGP Development Team
  *
  * http://www.opengamepanel.org/
  *
@@ -70,4 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Autostart on Agent startup");
 define('OGP_LANG_autostart_on_agent_startup_info', "Start the fast download daemon automatically when the Agent starts.");
 define('OGP_LANG_port_forwarded_to_80', "Port forwarded from 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Enable this option if the port configured for this fast download daemon has been forwarded from port 80, so the port will be hidden at URLs.");
+define('OGP_LANG_current_access_rules', "Current access rules");
 ?>

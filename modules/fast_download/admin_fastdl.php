@@ -2,7 +2,7 @@
 /*
  *
  * OGP - Open Game Panel
- * Copyright (C) 2008 - 2017 The OGP Development Team
+ * Copyright (C) 2008 - 2018 The OGP Development Team
  *
  * http://www.opengamepanel.org/
  *
@@ -105,7 +105,7 @@ function exec_ogp_module()
 			});
 			</script>
 			<?php
-			echo "<h3>".current_access_rules."</h3>\n";
+			echo "<h3>".OGP_LANG_current_access_rules."</h3>\n";
 			echo "<table id='servermonitor' class='tablesorter' style='width: 100%;'>\n<thead><tr>".
 				 "<th class='header'>".get_lang("game_name")."</th><th class='header'>".get_lang("match_file_extension")."</th><th class='header'>".get_lang("match_client_ip")."</th></tr></thead>\n<tbody>";
 			foreach($all_rules as $rule)
@@ -269,7 +269,7 @@ function exec_ogp_module()
 				{
 					if( preg_match("/^(127|0)/",$fastdl_info['ip']) )
 						$fastdl_info['ip'] = $rserver['agent_ip'];
-					echo "<p>".get_lang("current_aliases_at_remote_server")." :</p>";
+					echo "<p>".get_lang("current_aliases_at_remote_server").":</p>";
 					$aliases = $remote->fastdl_get_aliases();
 					if($aliases !== -1)
 					{
@@ -327,7 +327,7 @@ function exec_ogp_module()
 				return;
 			}
 			echo "<table class='center' ><tr><td><b>".get_lang("create_alias_for").
-				 " :</b></td><td>";
+				 ":</b></td><td>";
 			$extra_inputs = array(array('type' => 'hidden','name' => 'create_aliases','value' => get_lang("create_aliases")));
 			create_home_selector_address($_GET['m'], "", $server_homes, $extra_inputs);
 			echo "</td></tr></table>";
