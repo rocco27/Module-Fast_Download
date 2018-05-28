@@ -25,7 +25,7 @@
 define('OGP_LANG_create_alias', "Crear el alias y la carpeta");
 define('OGP_LANG_save_as', "Guardar como");
 define('OGP_LANG_failure', "Error, no se pudo generar el archivo de alias.");
-define('OGP_LANG_success', "Exito");
+define('OGP_LANG_success', "Éxito");
 define('OGP_LANG_fast_download_service_for', "Servicio de redirección de descargas para %s");
 define('OGP_LANG_to_the_path', "para la ruta");
 define('OGP_LANG_at_url', "en la URL");
@@ -42,7 +42,7 @@ define('OGP_LANG_listing', "Listar");
 define('OGP_LANG_listing_info', "Si está activado el servidor mostrara una lista del contenido de las carpetas.");
 define('OGP_LANG_fast_dl_advanced', "Configuración Avanzada");
 define('OGP_LANG_apply_settings_and_restart_fastdl', "Guardar la configuracion del servicio de redirección de descargas y reiniciarlo");
-define('OGP_LANG_stop_fastdl', "Stop Fast Download Daemon");
+define('OGP_LANG_stop_fastdl', "Detener el servicio de redirección de descargas.");
 define('OGP_LANG_fast_download_daemon_running', "El servicio de redirección de descargas está en marcha.");
 define('OGP_LANG_fast_download_daemon_not_running', "El servicio de redirección de descargas está parado.");
 define('OGP_LANG_fastdl_could_not_be_restarted', "No fue posible reiniciar el servicio Fast Download.");
