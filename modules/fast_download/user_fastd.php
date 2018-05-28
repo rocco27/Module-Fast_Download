@@ -2,7 +2,7 @@
 /*
  *
  * OGP - Open Game Panel
- * Copyright (C) 2008 - 2017 The OGP Development Team
+ * Copyright (C) 2008 - 2018 The OGP Development Team
  *
  * http://www.opengamepanel.org/
  *
@@ -39,7 +39,7 @@ function exec_ogp_module()
 		print_failure(get_lang("no_game_homes_assigned"));
 		return;
 	}
-	echo "<p>".get_lang("create_alias_for")." :</p>";
+	echo "<p>".get_lang("create_alias_for").":</p>";
 	create_home_selector_address($_GET['m'], $_GET['p'], $server_homes);
 
 	if( isset( $_GET['home_id-mod_id-ip-port'] ) and $_GET['home_id-mod_id-ip-port'] != "" )
@@ -110,10 +110,10 @@ function exec_ogp_module()
 			$home = clean_path("/".preg_replace("#".preg_quote($server_home['home_path'])."#", "", $alias_info['home']));
 			$url = "<a href='http://$address/".$alias_info['alias']."' target='_blank' >http://$address/".$alias_info['alias']."</a>";
 			echo "<p>".get_lang("at_url").
-				 " : <b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
+				 ": <b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >$url</b></p><p>".
 				 get_lang("to_the_path").
-				 " : <b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
+				 ": <b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >".$home."</b></p>".
 				 "<form method=POST >".
 				 "<input type=hidden name=rmalias value='".$alias_info['alias']."'/>".
@@ -124,10 +124,10 @@ function exec_ogp_module()
 		else
 		{
 			echo "<form method=POST ><p>".get_lang("at_url").
-				 " :</p><b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
+				 ":</p><b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >http://$address/</b>".
 				 "<input type=text name=alias value='$alias' /><br><p>".
-				 get_lang("to_the_path")." :</p><b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
+				 get_lang("to_the_path").":</p><b style='color:black;background:#FFF;padding:2.5px 0 1px 0;".
 				 "border:1.5px solid gray;' >/</b>".
 				 "<input type=text name=path value='$path' /><br>".
 				 "<input type=submit name=create value='".get_lang("create_alias")
