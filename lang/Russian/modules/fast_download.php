@@ -70,4 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Автозапуск при за�
 define('OGP_LANG_autostart_on_agent_startup_info', "Запускать службу Быстрой загрузки 'Fast Download' автоматически при запуске Агента");
 define('OGP_LANG_port_forwarded_to_80', "Порт переадресован из 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Включите эту опцию, если порт, настроенный для этой службы Быстрой загрузки 'Fast Download', был перенаправлен из порта 80, тогда порт будет скрыт в URL-адресах.");
+define('OGP_LANG_current_access_rules', "Current access rules");
 ?>

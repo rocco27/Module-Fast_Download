@@ -70,4 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Αυτόματη εκκίνηση
 define('OGP_LANG_autostart_on_agent_startup_info', "Ξεκινήστε το fast download daemon αυτόματα όταν ξεκινά ο Agent.");
 define('OGP_LANG_port_forwarded_to_80', "Η θύρα προωθήθηκε από 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Ενεργοποιήστε αυτήν την επιλογή αν η θύρα που έχει ρυθμιστεί για αυτό το fast download daemon έχει προωθηθεί από τη θύρα 80, οπότε η θύρα θα είναι κρυμμένη στις διευθύνσεις URL.");
+define('OGP_LANG_current_access_rules', "Current access rules");
 ?>
