@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Create the alias and folder");
+define('OGP_LANG_create_alias', "Create alias and folder");
 define('OGP_LANG_save_as', "Save As");
 define('OGP_LANG_failure', "Error, failed to generate the alias file");
 define('OGP_LANG_success', "Success");
@@ -53,7 +53,7 @@ define('OGP_LANG_delete_alias', "Delete alias");
 define('OGP_LANG_no_game_homes_assigned', "No game servers assigned for you. You need to ask your OGP admin to assign games for you.");
 define('OGP_LANG_select_remote_server', "Select remote server");
 define('OGP_LANG_access_rules', "Access rules");
-define('OGP_LANG_create_aliases', "Create Aliases");
+define('OGP_LANG_create_aliases', "Create aliases");
 define('OGP_LANG_select_game', "Select game");
 define('OGP_LANG_games_without_specified_rules', "Games without specified rules");
 define('OGP_LANG_match_file_extension', "Match file extension");
