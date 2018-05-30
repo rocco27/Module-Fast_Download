@@ -105,7 +105,7 @@ function exec_ogp_module()
 			});
 			</script>
 			<?php
-			echo "<h3>".OGP_LANG_current_access_rules."</h3>\n";
+			echo "<h3>".get_lang("current_access_rules")."</h3>\n";
 			echo "<table id='servermonitor' class='tablesorter' style='width: 100%;'>\n<thead><tr>".
 				 "<th class='header'>".get_lang("game_name")."</th><th class='header'>".get_lang("match_file_extension")."</th><th class='header'>".get_lang("match_client_ip")."</th></tr></thead>\n<tbody>";
 			foreach($all_rules as $rule)
