@@ -25,7 +25,7 @@
 define('OGP_LANG_create_alias', "Δημιουργήστε το ψευδώνυμο και το φάκελο.");
 define('OGP_LANG_save_as', "Αποθηκεύστε Ως");
 define('OGP_LANG_failure', "Σφάλμα, αποτυχεία δημηουργίας του αρχείου ψευδωνύμου.");
-define('OGP_LANG_success', "Επιτυχεία");
+define('OGP_LANG_success', "Επιτυχία");
 define('OGP_LANG_fast_download_service_for', "Λήψη υπηρεσίας ανακατεύθυνσης για %s.");
 define('OGP_LANG_to_the_path', "Στη διαδρομή");
 define('OGP_LANG_at_url', "Στο URL");
@@ -70,5 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Αυτόματη εκκίνηση
 define('OGP_LANG_autostart_on_agent_startup_info', "Ξεκινήστε το fast download daemon αυτόματα όταν ξεκινά ο Agent.");
 define('OGP_LANG_port_forwarded_to_80', "Η θύρα προωθήθηκε από 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Ενεργοποιήστε αυτήν την επιλογή αν η θύρα που έχει ρυθμιστεί για αυτό το fast download daemon έχει προωθηθεί από τη θύρα 80, οπότε η θύρα θα είναι κρυμμένη στις διευθύνσεις URL.");
-define('OGP_LANG_current_access_rules', "Current access rules");
+define('OGP_LANG_current_access_rules', "Τρέχον κανόνες πρόσβασης");
 ?>

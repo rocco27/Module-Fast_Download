@@ -70,5 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Démarrer avec l&apos;Agent");
 define('OGP_LANG_autostart_on_agent_startup_info', "Démarrer automatiquement la deamon Fast Download au lancement de l&apos;Agent");
 define('OGP_LANG_port_forwarded_to_80', "Port redirigé depuis 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Activer cette option si le port configuré pour le deamon Fast Download a été redirigé depuis le port 80, comme ça le port sera caché dans les URLs.");
-define('OGP_LANG_current_access_rules', "Current access rules");
+define('OGP_LANG_current_access_rules', "Règles d&apos;accès actuelles");
 ?>
