@@ -70,5 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Autostart na inicialização do a
 define('OGP_LANG_autostart_on_agent_startup_info', "Inicie a tarefa de download rápido automaticamente quando o Agente começar.");
 define('OGP_LANG_port_forwarded_to_80', "Porta reencaminhada para 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Ative esta opção se a porta configurada para esta tarefa de download rápido tiver sido encaminhada da porta 80, portanto a porta será escondida em URLs.");
-define('OGP_LANG_current_access_rules', "Current access rules");
+define('OGP_LANG_current_access_rules', "Regras de acesso actuais");
 ?>
