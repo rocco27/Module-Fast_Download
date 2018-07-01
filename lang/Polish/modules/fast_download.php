@@ -72,4 +72,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Autostart on Agent startup");
 define('OGP_LANG_autostart_on_agent_startup_info', "Start the fast download daemon automatically when the Agent starts.");
 define('OGP_LANG_port_forwarded_to_80', "Przekierowanie portu na 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Włącz tą opcję gdy Fast Download będzie działał na domyślnym porcie 80,  port nie będzie wyświetlony w adresie URL");
+define('OGP_LANG_current_access_rules', "Current access rules");
 ?>

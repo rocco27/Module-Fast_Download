@@ -22,21 +22,21 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Create the alias and folder");
-define('OGP_LANG_save_as', "Save As");
-define('OGP_LANG_failure', "Error, failed to generate the alias file");
-define('OGP_LANG_success', "Success");
-define('OGP_LANG_fast_download_service_for', "Downloads redirection service for %s");
-define('OGP_LANG_to_the_path', "To the path");
-define('OGP_LANG_at_url', "at URL");
-define('OGP_LANG_create_alias_for', "Create alias for");
-define('OGP_LANG_fast_dl', "Redirecting downloads (FastDL)");
-define('OGP_LANG_current_aliases_at_remote_server', "Current aliases at remote server");
-define('OGP_LANG_delete_selected_aliases', "Delete selected aliases");
-define('OGP_LANG_no_aliases_defined', "There are no web aliases defined by OGP for this remote server yet.");
-define('OGP_LANG_fastdl_port', "Port");
-define('OGP_LANG_fastdl_port_info', "Port on which your Fast Download Daemon will start.");
-define('OGP_LANG_fastdl_ip', "Address");
+define('OGP_LANG_create_alias', "Креирај алијас и фолдер");
+define('OGP_LANG_save_as', "Сачувај као");
+define('OGP_LANG_failure', "Грешка, генерисање алијас фајла није успело");
+define('OGP_LANG_success', "Успешно");
+define('OGP_LANG_fast_download_service_for', "Преузимање сервиса за преузимање за %s");
+define('OGP_LANG_to_the_path', "До путање");
+define('OGP_LANG_at_url', "на линку");
+define('OGP_LANG_create_alias_for', "Креирај алијас за");
+define('OGP_LANG_fast_dl', "Преусмеравање преузимања (Брзо преузимање)");
+define('OGP_LANG_current_aliases_at_remote_server', "Тренутни алијаси на удаљеном серверу");
+define('OGP_LANG_delete_selected_aliases', "Избриши изабране алијасе");
+define('OGP_LANG_no_aliases_defined', "Тренутно нема дефинисаних веб алијаса.");
+define('OGP_LANG_fastdl_port', "рт");
+define('OGP_LANG_fastdl_port_info', "Порт на ком ће се Fast Download Daemon стартовати.");
+define('OGP_LANG_fastdl_ip', "Адресе");
 define('OGP_LANG_fastdl_ip_info', "The IP address or domain in which your Fast Download server will start, the domain must to be listed at /etc/hosts.");
 define('OGP_LANG_listing', "Listing");
 define('OGP_LANG_listing_info', "If 'on', the server will list the contents of folders.");

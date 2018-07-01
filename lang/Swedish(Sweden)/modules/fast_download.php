@@ -70,4 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Autostarta vid Agent-start ");
 define('OGP_LANG_autostart_on_agent_startup_info', "Starta snabbnedladdnings-daemonen automatiskt när agenten startar. ");
 define('OGP_LANG_port_forwarded_to_80', "Vidarebefodrad från port 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Aktivera detta alternativ om porten som är konfigurerad för denna snabbnedladdnings-daemon är vidarebefodrad från port 80, så att porten blir gömd i URL'er. ");
+define('OGP_LANG_current_access_rules', "Current access rules");
 ?>

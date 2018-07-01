@@ -70,4 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Inicio automático en el inicio d
 define('OGP_LANG_autostart_on_agent_startup_info', "Inicie el daemon de descarga rápida automáticamente cuando se inicie el Agente.");
 define('OGP_LANG_port_forwarded_to_80', "Puerto redireccionado desde el puerto 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Activa esta opción si el puerto 80 ha sido redireccionado al puerto configurado para este servicio, por lo que se ocultará en las URLs.");
+define('OGP_LANG_current_access_rules', "Reglas de acceso actuales");
 ?>

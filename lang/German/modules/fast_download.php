@@ -70,4 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Autostart beim Agentenstart");
 define('OGP_LANG_autostart_on_agent_startup_info', "Starten Sie den schnellen Download Daemon automatisch, wenn der Agent startet.");
 define('OGP_LANG_port_forwarded_to_80', "Port weitergeleitet von 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Aktivieren Sie diese Option, wenn der für diesen FastDL Daemon konfigurierte Port von Port 80 aus weitergeleitet wurde, sodass der Port bei URLs verborgen bleibt.");
+define('OGP_LANG_current_access_rules', "Current access rules");
 ?>
