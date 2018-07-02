@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "إنشاء الاسم المستعار والمجلد");
+define('OGP_LANG_create_alias', "Create alias and folder");
 define('OGP_LANG_save_as', "الحفظ في");
 define('OGP_LANG_failure', "حدث خطأ، فشلت في إنشاء ملف الاسم المستعار");
 define('OGP_LANG_success', "نجح");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "إزالة المجلد");
 define('OGP_LANG_delete_alias', "حذف الاسم المستعار");
 define('OGP_LANG_no_game_homes_assigned', "No game servers assigned for you. You need to ask your OGP admin to assign games for you.");
 define('OGP_LANG_select_remote_server', "حدد سيرفر التحكم");
-define('OGP_LANG_access_rules', "قواعد الوصول");
+define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "إنشاء الأسماء المستعارة");
 define('OGP_LANG_select_game', "حدد اللعبة");
 define('OGP_LANG_games_without_specified_rules', "ألعاب بدون قواعد محددة");
@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Match file extension");
 define('OGP_LANG_match_file_extension_info', "Specify extensions separated by coma,<br> the matching files will be accessible.<br><b>Blank for unrestricted access</b>.");
 define('OGP_LANG_match_client_ip', "Match client IP");
 define('OGP_LANG_match_client_ip_info', "Connections with matching IP will be granted,<br>blank for unrestricted access. You can use<br>multiple IPs or ranges separated by coma:<br>/xx subnets<br>Example: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br>Example: 10.0.0.0/255.0.0.0<br>Hyphen ranges<br>Example: 10.0.0.5-230<br>Asterisk matching<br>Example: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "حفظ قواعد الوصول");
+define('OGP_LANG_save_access_rules', "Save Access Rules");
 define('OGP_LANG_create_access_rules', "إنشاء قواعد الوصول");
 define('OGP_LANG_invalid_entries_found', "تم العثور على إدخالات غير صالحة");
 define('OGP_LANG_game_name', "إسم اللعبة");

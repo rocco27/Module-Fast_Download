@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Skapa alias och mapp ");
+define('OGP_LANG_create_alias', "Create alias and folder");
 define('OGP_LANG_save_as', "Spara som");
 define('OGP_LANG_failure', "Fel, misslyckades med att skapa alias filen");
 define('OGP_LANG_success', "Lyckades");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "Ta bort mapp");
 define('OGP_LANG_delete_alias', "Ta bort alias ");
 define('OGP_LANG_no_game_homes_assigned', "Inga spelservrar tilldelade till dig. Du måste be din OGP-Administratör att tilldela spel till dig. ");
 define('OGP_LANG_select_remote_server', "Välj fjärrserver ");
-define('OGP_LANG_access_rules', "Accessregler ");
+define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Skapa alias ");
 define('OGP_LANG_select_game', "Välj spel");
 define('OGP_LANG_games_without_specified_rules', "Spel utan specificerade regler");
@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Matcha filändelsen");
 define('OGP_LANG_match_file_extension_info', "Specificera filtillägg separerade av coma, <br> de matchande filerna kommer att vara tillgängliga. <br> <b>Blanka för obegränsad åtkomst </b>. ");
 define('OGP_LANG_match_client_ip', "Matcha klient-IP ");
 define('OGP_LANG_match_client_ip_info', "Connections with matching IP will be granted,<br>blank for unrestricted access. You can use<br>multiple IPs or ranges separated by coma:<br>/xx subnets<br>Example: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br>Example: 10.0.0.0/255.0.0.0<br>Hyphen ranges<br>Example: 10.0.0.5-230<br>Asterisk matching<br>Example: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Spara accessregler ");
+define('OGP_LANG_save_access_rules', "Save Access Rules");
 define('OGP_LANG_create_access_rules', "Skapa accessregler");
 define('OGP_LANG_invalid_entries_found', "Ogiltiga poster hittades ");
 define('OGP_LANG_game_name', "Spelnamn");
