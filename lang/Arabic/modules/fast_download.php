@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Match file extension");
 define('OGP_LANG_match_file_extension_info', "Specify extensions separated by coma,<br> the matching files will be accessible.<br><b>Blank for unrestricted access</b>.");
 define('OGP_LANG_match_client_ip', "Match client IP");
 define('OGP_LANG_match_client_ip_info', "Connections with matching IP will be granted,<br>blank for unrestricted access. You can use<br>multiple IPs or ranges separated by coma:<br>/xx subnets<br>Example: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br>Example: 10.0.0.0/255.0.0.0<br>Hyphen ranges<br>Example: 10.0.0.5-230<br>Asterisk matching<br>Example: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Save Access Rules");
+define('OGP_LANG_save_access_rules', "حفظ قواعد الوصول");
 define('OGP_LANG_create_access_rules', "إنشاء قواعد الوصول");
 define('OGP_LANG_invalid_entries_found', "تم العثور على إدخالات غير صالحة");
 define('OGP_LANG_game_name', "إسم اللعبة");

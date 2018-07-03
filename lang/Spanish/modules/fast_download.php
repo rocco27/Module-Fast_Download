@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Create alias and folder");
+define('OGP_LANG_create_alias', "Crear alias y carpeta");
 define('OGP_LANG_save_as', "Guardar como");
 define('OGP_LANG_failure', "Error, no se pudo generar el archivo de alias.");
 define('OGP_LANG_success', "Éxito");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "Eliminar carpeta");
 define('OGP_LANG_delete_alias', "Eliminar alias");
 define('OGP_LANG_no_game_homes_assigned', "No hay ninguna home asignada a su cuenta.");
 define('OGP_LANG_select_remote_server', "Seleccione servidor remoto");
-define('OGP_LANG_access_rules', "Access Rules");
+define('OGP_LANG_access_rules', "Reglas de acceso");
 define('OGP_LANG_create_aliases', "Crear alias");
 define('OGP_LANG_select_game', "Seleccione un juego");
 define('OGP_LANG_games_without_specified_rules', "Juegos sin reglas especificadas");
@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Coincide la extension");
 define('OGP_LANG_match_file_extension_info', "Especifique extensiones separadas por coma,<br> los archivos que coincidan serán accesibles.<br><b>Vacio para acceso ilimitado.</b>.");
 define('OGP_LANG_match_client_ip', "Coincide la IP del cliente");
 define('OGP_LANG_match_client_ip_info', "Las conexiones con IP coincidente serán concedidas,<br>Vacio para acceso ilimitado.<br>Puede usar multiples IPs<br>o rangos separados por coma:<br>Subredes /xx<br>Ejemplo: 10.0.0.0/16<br>Subredes /xxx.xxx.xxx.xxx<br>Ejemplo: 10.0.0.0/255.0.0.0<br>Rango establecido por un guión<br>Ejemplo: 10.0.0.5-230<br>Coincidencia por asterisco<br>Ejemplo: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Save Access Rules");
+define('OGP_LANG_save_access_rules', "Guardar reglas");
 define('OGP_LANG_create_access_rules', "Crear reglas de acceso");
 define('OGP_LANG_invalid_entries_found', "Se han encontrado entradas invalidas");
 define('OGP_LANG_game_name', "Nombre del juego");
