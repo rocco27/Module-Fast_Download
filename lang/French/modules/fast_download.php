@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Créer l&#39;Alias et le dossier");
+define('OGP_LANG_create_alias', "Créer l&apos;Alias et le dossier");
 define('OGP_LANG_save_as', "Enregistrer sous");
 define('OGP_LANG_failure', "Erreur, impossible de générer le fichier d&#39;Alias");
 define('OGP_LANG_success', "Succès");

@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Crie o alias e a respectiva pasta");
+define('OGP_LANG_create_alias', "Create alias and folder");
 define('OGP_LANG_save_as', "Salvar como");
 define('OGP_LANG_failure', "Erro, não conseguiu gerar o arquivo de alias");
 define('OGP_LANG_success', "Sucesso");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "Remover pasta");
 define('OGP_LANG_delete_alias', "Apagar alias");
 define('OGP_LANG_no_game_homes_assigned', "Neste momento não existe nenhum servidor que lhe tenha sido atribuído. Você precisará de  pedir ao seu administrador do painel/empresa para que lhe reserve um.");
 define('OGP_LANG_select_remote_server', "Selecione o servidor remoto");
-define('OGP_LANG_access_rules', "Regras de acesso");
+define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Criar Alias");
 define('OGP_LANG_select_game', "Selecione o jogo");
 define('OGP_LANG_games_without_specified_rules', "Jogos sem regras especificadas");
@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Extensão de arquivo do jogo");
 define('OGP_LANG_match_file_extension_info', "Especificar extensões separadas por coma, <br> os arquivos correspondentes serão acessíveis.<br><b> Branco para acesso irrestrito </b>.");
 define('OGP_LANG_match_client_ip', "Corresponde ao IP do cliente");
 define('OGP_LANG_match_client_ip_info', "As conexões com IP correspondente serão concedidas,<br>Em branco para acesso irrestrito. Você pode usar<br>Múltiplos IPs ou intervalos separados pelo coma:<br>/xx subnets<br>Exemplo: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br> Exemplo: 10.0.0.0/255.0.0.0<br>Faixas de hífen<br>Exemplo: 10.0.0.5-230<br>Correspondência de asterisco<br>Exemplo: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Salvar regras de acesso");
+define('OGP_LANG_save_access_rules', "Save Access Rules");
 define('OGP_LANG_create_access_rules', "Criar regras de acesso");
 define('OGP_LANG_invalid_entries_found', "Foram encontradas entradas inválidas");
 define('OGP_LANG_game_name', "Nome do jogo");

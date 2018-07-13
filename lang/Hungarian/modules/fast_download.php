@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Mappa és álnév létrehozása");
+define('OGP_LANG_create_alias', "Álnév és mappa létrehozása");
 define('OGP_LANG_save_as', "Mentés mint");
 define('OGP_LANG_failure', "Hiba, nem sikerült az álnév fájl generálása");
 define('OGP_LANG_success', "Siker");

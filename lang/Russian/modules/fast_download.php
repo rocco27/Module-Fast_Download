@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Создайте альяс и папку");
+define('OGP_LANG_create_alias', "Create alias and folder");
 define('OGP_LANG_save_as', "Сохранить как...");
 define('OGP_LANG_failure', "Ошибка, не удалось сгенерировать файл альяса");
 define('OGP_LANG_success', "Успешно");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "Удалить папку");
 define('OGP_LANG_delete_alias', "Удалить Аляс");
 define('OGP_LANG_no_game_homes_assigned', "У вас нету привязанных . Обратитесь к администратору для решения этой проблемы.");
 define('OGP_LANG_select_remote_server', "Выберите удаленный хост");
-define('OGP_LANG_access_rules', "Правила доступа");
+define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Создать Аляс");
 define('OGP_LANG_select_game', "Выберите игру");
 define('OGP_LANG_games_without_specified_rules', "Игры без заданных правил");
@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Разрешить файлы с рас
 define('OGP_LANG_match_file_extension_info', "Доступные файлы для скачивания будут только те,<br> у которых будет совпадать расширение с тем что вписано тут через запятую ',' <br><b>Оставте поле пустым что бы разрешить все!</b>.");
 define('OGP_LANG_match_client_ip', "Разрешенные IP-адреса клиента");
 define('OGP_LANG_match_client_ip_info', "Подключаться смогут только те, IP у которых будет доступ, вписав их через запятую ',' <br> Оставте поле пустым что бы разрешить подключением ВСЕМ!<br>Вы можете разрешить несколько IP-адресов<br>подсеть /xx <br> Например: 10.0.0.0/16 <br> подсеть  /xxx.xxx.xxx.xxx <br> Пример: 10.0.0.0/255.0.0.0 <br> Диапазоны <br>Пример: 10.0.0.5-230<br>Маску <br>Пример: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Сохранить правила доступа");
+define('OGP_LANG_save_access_rules', "Save Access Rules");
 define('OGP_LANG_create_access_rules', "Создать правила доступа");
 define('OGP_LANG_invalid_entries_found', "Найдены не правильные записи");
 define('OGP_LANG_game_name', "Название игры");

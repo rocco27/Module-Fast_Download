@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Stwórz alias oraz folder");
+define('OGP_LANG_create_alias', "Create alias and folder");
 define('OGP_LANG_save_as', "Zapisz jako");
 define('OGP_LANG_failure', "Błąd, nie udało się wygenerować pliku dla aliasu");
 define('OGP_LANG_success', "Powodzenie");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "Usuń folder");
 define('OGP_LANG_delete_alias', "Usuń alias");
 define('OGP_LANG_no_game_homes_assigned', "Brak serwerów gry przeznaczonych dla Ciebie. Musisz zwrócić się do admin OGP by przypisać dla Ciebie serwery.");
 define('OGP_LANG_select_remote_server', "Wybierz serwer hosta");
-define('OGP_LANG_access_rules', "Zasady dostępu");
+define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Stwórz Alias");
 define('OGP_LANG_select_game', "Wybierz grę");
 define('OGP_LANG_games_without_specified_rules', "Gry bez określonych reguł");
@@ -62,7 +62,7 @@ define('OGP_LANG_match_client_ip', "Dopasuj klienta IP");
 define('OGP_LANG_match_client_ip_info', "Połączenia z pasującym adresem IP zostaną przyznane,<br>
 puste dla nieograniczonego dostępu.<br>Możesz użyć wiele adresów IP lub zakresów oddzielonych przecinkami:<br>
 /xx podsieci<br> Przykład: 10.0.0.0/16<br> /xxx.xxx.xxx.xxx podsieci<br> Przykład: 10.0.0.0/255.0.0.0<br> Dzielniki<br> Przykład: 10.0.0.5-230<br> Gwiazdki<br> Przykład: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Zapisz reguły dostępu");
+define('OGP_LANG_save_access_rules', "Save Access Rules");
 define('OGP_LANG_create_access_rules', "Stwórz reguły dostępu");
 define('OGP_LANG_invalid_entries_found', "Znaleziono nieprawidłowe wpisy");
 define('OGP_LANG_game_name', "Nazwa Gry");

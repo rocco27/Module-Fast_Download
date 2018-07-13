@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Δημιουργήστε το ψευδώνυμο και το φάκελο.");
+define('OGP_LANG_create_alias', "Create alias and folder");
 define('OGP_LANG_save_as', "Αποθηκεύστε Ως");
 define('OGP_LANG_failure', "Σφάλμα, αποτυχεία δημηουργίας του αρχείου ψευδωνύμου.");
 define('OGP_LANG_success', "Επιτυχία");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "Καταργήστε το φάκελο");
 define('OGP_LANG_delete_alias', "Διαγράψτε το ψευδώνυμο");
 define('OGP_LANG_no_game_homes_assigned', "Δεν έχουν οριστεί διακομιστές παιχνιδιών για εσάς. Πρέπει να ζητήσετε από το διαχειριστή του OGP να αναθέσει παιχνίδια για εσάς.");
 define('OGP_LANG_select_remote_server', "Επιλέξτε απομακρυσμένο διακομιστή");
-define('OGP_LANG_access_rules', "Κανόνες πρόσβασης");
+define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Δημιουργίστε Ψευδώνυμα");
 define('OGP_LANG_select_game', "Επιλέξτε Παιχνίδι");
 define('OGP_LANG_games_without_specified_rules', "Παιχνίδια χωρίς καθορισμένους κανόνες");
@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Ταιριάξτε την επέκτα�
 define('OGP_LANG_match_file_extension_info', "Καθορίστε επεκτάσεις χωρίζοντάς τες με κόμμα,<br>τα αρχεία που ταιριάζουν θα είναι προσβάσιμα.<br><b>Κενό για απεριόριστη πρόσβαση</b>.");
 define('OGP_LANG_match_client_ip', "Ταιριάξτε την IP πελάτη");
 define('OGP_LANG_match_client_ip_info', "Συνδέσεις με διεύθυνση IP που ταιριάζει θα επιτρέπονται,<br>κενές για απεριόριστη πρόσβαση. Μπορείτε να χρησιμοποιήσετε<br>πολλαπλές διευθύνσεις IP ή εύροι που διαχωρίζονται με κόμμα:<br>/xx υποδίκτυα<br>Παράδειγμα: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx υποδίκτυα<br>Παράδειγμα: 10.0.0.0/255.0.0.0<br>Hyphen εύροι<br>Παράδειγμα: 10.0.0.5-230<br>Ταίριασμα με Αστερίσκο<br>Παράδειγμα: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Αποθηκεύστε κανόνες πρόσβασης");
+define('OGP_LANG_save_access_rules', "Save Access Rules");
 define('OGP_LANG_create_access_rules', "Δημιουργήστε κανόνες πρόσβασης");
 define('OGP_LANG_invalid_entries_found', "Βρέθηκαν μη έγκυρες καταχωρήσεις");
 define('OGP_LANG_game_name', "Όνομα παιχνιδιού");
