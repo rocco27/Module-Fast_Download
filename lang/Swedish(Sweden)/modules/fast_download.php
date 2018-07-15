@@ -22,7 +22,7 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Create alias and folder");
+define('OGP_LANG_create_alias', "Skapa alias och mappar");
 define('OGP_LANG_save_as', "Spara som");
 define('OGP_LANG_failure', "Fel, misslyckades med att skapa alias filen");
 define('OGP_LANG_success', "Lyckades");
@@ -42,9 +42,9 @@ define('OGP_LANG_listing', "Lista");
 define('OGP_LANG_listing_info', "Om \"på\", kommer servern lista innehållet i mappar. ");
 define('OGP_LANG_fast_dl_advanced', "Avancerade alternativ");
 define('OGP_LANG_apply_settings_and_restart_fastdl', "Spara daemon-konfigurationen och starta om den ");
-define('OGP_LANG_stop_fastdl', "Stop Fast Download Daemon");
-define('OGP_LANG_fast_download_daemon_running', "Snabbnedladdnings-daemonen körs. ");
-define('OGP_LANG_fast_download_daemon_not_running', "Snabbnedladdnings-daemonen körs inte. ");
+define('OGP_LANG_stop_fastdl', "Stoppa snabbnedladdningstjänsten. ");
+define('OGP_LANG_fast_download_daemon_running', "Snabbnedladdningstjänsten körs. ");
+define('OGP_LANG_fast_download_daemon_not_running', "Snabbnedladdningstjänsten körs inte. ");
 define('OGP_LANG_fastdl_could_not_be_restarted', "Snabbnedladdnings-tjänsten kunde inte startas om. ");
 define('OGP_LANG_configuration_file_could_not_be_written', "Det gick inte att skriva till konfigurationsfilen. ");
 define('OGP_LANG_remove_folders', "Ta bort mappar för de valda aliasen. ");
@@ -52,7 +52,7 @@ define('OGP_LANG_remove_folder', "Ta bort mapp");
 define('OGP_LANG_delete_alias', "Ta bort alias ");
 define('OGP_LANG_no_game_homes_assigned', "Inga spelservrar tilldelade till dig. Du måste be din OGP-Administratör att tilldela spel till dig. ");
 define('OGP_LANG_select_remote_server', "Välj fjärrserver ");
-define('OGP_LANG_access_rules', "Access Rules");
+define('OGP_LANG_access_rules', "Åtkomstregler");
 define('OGP_LANG_create_aliases', "Skapa alias ");
 define('OGP_LANG_select_game', "Välj spel");
 define('OGP_LANG_games_without_specified_rules', "Spel utan specificerade regler");
@@ -60,7 +60,7 @@ define('OGP_LANG_match_file_extension', "Matcha filändelsen");
 define('OGP_LANG_match_file_extension_info', "Specificera filtillägg separerade av coma, <br> de matchande filerna kommer att vara tillgängliga. <br> <b>Blanka för obegränsad åtkomst </b>. ");
 define('OGP_LANG_match_client_ip', "Matcha klient-IP ");
 define('OGP_LANG_match_client_ip_info', "Connections with matching IP will be granted,<br>blank for unrestricted access. You can use<br>multiple IPs or ranges separated by coma:<br>/xx subnets<br>Example: 10.0.0.0/16<br>/xxx.xxx.xxx.xxx subnets<br>Example: 10.0.0.0/255.0.0.0<br>Hyphen ranges<br>Example: 10.0.0.5-230<br>Asterisk matching<br>Example: 10.0.*.*");
-define('OGP_LANG_save_access_rules', "Save Access Rules");
+define('OGP_LANG_save_access_rules', "Spara åtkomstregler");
 define('OGP_LANG_create_access_rules', "Skapa accessregler");
 define('OGP_LANG_invalid_entries_found', "Ogiltiga poster hittades ");
 define('OGP_LANG_game_name', "Spelnamn");
@@ -70,5 +70,5 @@ define('OGP_LANG_autostart_on_agent_startup', "Autostarta vid Agent-start ");
 define('OGP_LANG_autostart_on_agent_startup_info', "Starta snabbnedladdnings-daemonen automatiskt när agenten startar. ");
 define('OGP_LANG_port_forwarded_to_80', "Vidarebefodrad från port 80");
 define('OGP_LANG_port_forwarded_to_80_info', "Aktivera detta alternativ om porten som är konfigurerad för denna snabbnedladdnings-daemon är vidarebefodrad från port 80, så att porten blir gömd i URL'er. ");
-define('OGP_LANG_current_access_rules', "Current access rules");
+define('OGP_LANG_current_access_rules', "Nuvarande åtkomstregler");
 ?>
