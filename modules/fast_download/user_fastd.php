@@ -60,7 +60,7 @@ function exec_ogp_module()
 		$fastdl_display_ip = checkDisplayPublicIP($server_home['display_public_ip'],$server_home['ip'] != $fastdl_info['ip'] ? $server_home['ip'] : $fastdl_info['ip']);
 
 		$address = ($fastdl_info['port'] == '80' OR ($fastdl_settings and $fastdl_settings['port_forwarded_to_80'] == '1')) ? $fastdl_display_ip : $fastdl_display_ip.":".$fastdl_info['port'];
-		$alias = isset( $_POST['alias'] ) ? $_POST['alias'] : str_replace(".","_",$fastdl_display_ip)."_".$fastdl_info['port'];
+		$alias = isset( $_POST['alias'] ) ? $_POST['alias'] : str_replace(".","_",$fastdl_display_ip)."_".$server_home['port'];
 		$path = isset( $_POST['path'] ) ? $_POST['path'] : "fastdl";
 		$aliases = $remote->fastdl_get_aliases();
 		if( isset( $_POST['delete'] ) )

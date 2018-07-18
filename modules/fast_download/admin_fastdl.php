@@ -213,12 +213,11 @@ function exec_ogp_module()
 				 "<option></option>\n";
 			foreach ( $remote_servers as $server )
 			{
-				$display_ip = checkDisplayPublicIP($server['display_public_ip'],$server['ip'] != $server['agent_ip'] ? $server['ip'] : $server['agent_ip']);
 				$selected = ( isset( $_GET['remote_server_id'] ) and 
 							  $server['remote_server_id'] == $_GET['remote_server_id'] ) ? 
 							  "selected=selected" : "";
 				echo "<option $selected value='".$server['remote_server_id']."'>".
-					 $server['remote_server_name']." (".$display_ip.")</option>\n";
+					 $server['remote_server_name']." (".$server['agent_ip'].")</option>\n";
 			}
 			echo "</select></form>\n";
 		}
