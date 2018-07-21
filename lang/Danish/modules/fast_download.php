@@ -50,7 +50,7 @@ define('OGP_LANG_configuration_file_could_not_be_written', "The configuration fi
 define('OGP_LANG_remove_folders', "Remove folder for selected aliases.");
 define('OGP_LANG_remove_folder', "Remove folder");
 define('OGP_LANG_delete_alias', "Delete alias");
-define('OGP_LANG_no_game_homes_assigned', "Ingen spil server, er bleven tildelt til dig. Du må spørge en OGP admin om hjælp, for at få tildelt nogle spil.");
+define('OGP_LANG_no_game_homes_assigned', "You don't have any servers assigned to your account.");
 define('OGP_LANG_select_remote_server', "Vælg Fjern Server");
 define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Create Aliases");

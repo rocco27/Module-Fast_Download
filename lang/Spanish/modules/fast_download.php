@@ -50,7 +50,7 @@ define('OGP_LANG_configuration_file_could_not_be_written', "No se pudo escribir 
 define('OGP_LANG_remove_folders', "Eliminar carpeta para los alias seleccionados.");
 define('OGP_LANG_remove_folder', "Eliminar carpeta");
 define('OGP_LANG_delete_alias', "Eliminar alias");
-define('OGP_LANG_no_game_homes_assigned', "No hay ninguna home asignada a su cuenta.");
+define('OGP_LANG_no_game_homes_assigned', "No tienes ningún servidor asignado a tu cuenta.");
 define('OGP_LANG_select_remote_server', "Seleccione servidor remoto");
 define('OGP_LANG_access_rules', "Reglas de acceso");
 define('OGP_LANG_create_aliases', "Crear alias");

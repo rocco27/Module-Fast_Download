@@ -50,7 +50,7 @@ define('OGP_LANG_configuration_file_could_not_be_written', "Δεν ήταν δυ
 define('OGP_LANG_remove_folders', "Καταργήστε το φάκελο για επιλεγμένα ψευδώνυμα.");
 define('OGP_LANG_remove_folder', "Καταργήστε το φάκελο");
 define('OGP_LANG_delete_alias', "Διαγράψτε το ψευδώνυμο");
-define('OGP_LANG_no_game_homes_assigned', "Δεν έχουν οριστεί διακομιστές παιχνιδιών για εσάς. Πρέπει να ζητήσετε από το διαχειριστή του OGP να αναθέσει παιχνίδια για εσάς.");
+define('OGP_LANG_no_game_homes_assigned', "You don't have any servers assigned to your account.");
 define('OGP_LANG_select_remote_server', "Επιλέξτε απομακρυσμένο διακομιστή");
 define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Δημιουργίστε Ψευδώνυμα");

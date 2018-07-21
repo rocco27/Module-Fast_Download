@@ -50,7 +50,7 @@ define('OGP_LANG_configuration_file_could_not_be_written', "Файл конфи�
 define('OGP_LANG_remove_folders', "Удалить папку для выбранных алаясов");
 define('OGP_LANG_remove_folder', "Удалить папку");
 define('OGP_LANG_delete_alias', "Удалить Аляс");
-define('OGP_LANG_no_game_homes_assigned', "У вас нету привязанных . Обратитесь к администратору для решения этой проблемы.");
+define('OGP_LANG_no_game_homes_assigned', "You don't have any servers assigned to your account.");
 define('OGP_LANG_select_remote_server', "Выберите удаленный хост");
 define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Создать Аляс");
