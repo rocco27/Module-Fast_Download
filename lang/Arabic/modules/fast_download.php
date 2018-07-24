@@ -50,7 +50,7 @@ define('OGP_LANG_configuration_file_could_not_be_written', "لم يتم حفظ �
 define('OGP_LANG_remove_folders', "إزالة المجلد للأسماء المستعارة المحددة.");
 define('OGP_LANG_remove_folder', "إزالة المجلد");
 define('OGP_LANG_delete_alias', "حذف الاسم المستعار");
-define('OGP_LANG_no_game_homes_assigned', "You don't have any servers assigned to your account.");
+define('OGP_LANG_no_game_homes_assigned', "ليس لديك أي خوادم تم تعيينه لحسابك.");
 define('OGP_LANG_select_remote_server', "حدد سيرفر التحكم");
 define('OGP_LANG_access_rules', "شروط الوصول.");
 define('OGP_LANG_create_aliases', "إنشاء الأسماء المستعارة");
