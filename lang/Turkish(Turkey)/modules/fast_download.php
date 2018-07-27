@@ -22,10 +22,10 @@
  *
  */
 
-define('OGP_LANG_create_alias', "Create alias and folder");
-define('OGP_LANG_save_as', "Save As");
-define('OGP_LANG_failure', "Error, failed to generate the alias file");
-define('OGP_LANG_success', "Success");
+define('OGP_LANG_create_alias', "Takma ad ve klasör oluştur");
+define('OGP_LANG_save_as', "Farklı Kaydet");
+define('OGP_LANG_failure', "Hata, takma ad oluştururken başarısız olundu");
+define('OGP_LANG_success', "Başarılı");
 define('OGP_LANG_fast_download_service_for', "Downloads redirection service for %s");
 define('OGP_LANG_to_the_path', "To the path");
 define('OGP_LANG_at_url', "at URL");
