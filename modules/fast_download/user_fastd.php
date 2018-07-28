@@ -29,19 +29,7 @@ function exec_ogp_module()
 {
 	global $db,$view;
 	echo "<h2>".get_lang("fast_dl")."</h2>\n";
-	$isAdmin = $db->isAdmin($_SESSION['user_id']);
-	if($isAdmin)
-		$server_homes = $db->getIpPorts();
-	else
-		$server_homes = $db->getIpPortsForUser($_SESSION['user_id']);
-	if( $server_homes === FALSE )
-	{
-		print_failure(get_lang("no_game_homes_assigned"));
-		return;
-	}
-	echo "<p>".get_lang("create_alias_for").":</p>";
-	create_home_selector_address($_GET['m'], $_GET['p'], $server_homes);
-
+	
 	if( isset( $_GET['home_id-mod_id-ip-port'] ) and $_GET['home_id-mod_id-ip-port'] != "" )
 	{
 		list($home_id, $mod_id, $ip, $port) = explode( "-", $_GET['home_id-mod_id-ip-port'] );
