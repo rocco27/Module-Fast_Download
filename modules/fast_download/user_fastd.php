@@ -121,6 +121,7 @@ function exec_ogp_module()
 				 "<input type=submit name=create value='".get_lang("create_alias")
 				 ."'/>\n</form>";
 		}
+		echo "<br><a href='?m=gamemanager&p=game_monitor&home_id-mod_id-ip-port=".$_GET['home_id-mod_id-ip-port']."'>".get_lang('back')."</a>";
 	} 
 }
 ?>
