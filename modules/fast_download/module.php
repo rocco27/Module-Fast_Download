@@ -27,8 +27,7 @@ $module_title = "Fast Download";
 $module_version = "2.1";
 $db_version = 4;
 $module_required = TRUE;
-$module_menus = array( array( 'subpage' => '', 'name'=>'Fast Download', 'group'=>'admin' ),
-					   array( 'subpage' => 'fd_user', 'name'=>'Fast Download', 'group'=>'user' ) );
+$module_menus = array( array( 'subpage' => '', 'name'=>'Fast Download', 'group'=>'admin' ) );
 
 $install_queries[0] = array("SELECT NOW();");
 $install_queries[1] = array("DROP TABLE IF EXISTS `".OGP_DB_PREFIX."fastdl`;");
