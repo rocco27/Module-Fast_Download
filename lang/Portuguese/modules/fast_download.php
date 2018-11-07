@@ -50,7 +50,7 @@ define('OGP_LANG_configuration_file_could_not_be_written', "O arquivo de configu
 define('OGP_LANG_remove_folders', "Remova a pasta para alias selecionados.");
 define('OGP_LANG_remove_folder', "Remover pasta");
 define('OGP_LANG_delete_alias', "Apagar alias");
-define('OGP_LANG_no_game_homes_assigned', "Neste momento não existe nenhum servidor que lhe tenha sido atribuído. Você precisará de  pedir ao seu administrador do painel/empresa para que lhe reserve um.");
+define('OGP_LANG_no_game_homes_assigned', "You don't have any servers assigned to your account.");
 define('OGP_LANG_select_remote_server', "Selecione o servidor remoto");
 define('OGP_LANG_access_rules', "Access Rules");
 define('OGP_LANG_create_aliases', "Criar Alias");

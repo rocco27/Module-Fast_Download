@@ -29,25 +29,48 @@ function exec_ogp_module()
 {
 	global $db,$view;
 	echo "<h2>".get_lang("fast_dl")."</h2>\n";
-	$isAdmin = $db->isAdmin($_SESSION['user_id']);
-	if($isAdmin)
-		$server_homes = $db->getIpPorts();
-	else
-		$server_homes = $db->getIpPortsForUser($_SESSION['user_id']);
-	if( $server_homes === FALSE )
-	{
-		print_failure(get_lang("no_game_homes_assigned"));
-		return;
-	}
-	echo "<p>".get_lang("create_alias_for").":</p>";
-	create_home_selector_address($_GET['m'], $_GET['p'], $server_homes);
-
+	
 	if( isset( $_GET['home_id-mod_id-ip-port'] ) and $_GET['home_id-mod_id-ip-port'] != "" )
 	{
 		list($home_id, $mod_id, $ip, $port) = explode( "-", $_GET['home_id-mod_id-ip-port'] );
-		$server_home = $db->getGameHomeByIP($ip, $port);
-		if ( !$server_home )
+		
+		$isAdmin = $db->isAdmin( $_SESSION['user_id'] );
+		if($isAdmin) 
+			$server_home = $db->getGameHome($home_id);
+		else
+			$server_home = $db->getUserGameHome($_SESSION['user_id'],$home_id);
+		
+		if ($server_home === FALSE)
+		{
+			print_failure( get_lang("no_access_to_home") );
 			return;
+		}
+		
+		if ( preg_match("/d/",$server_home['access_rights']) != 1 )
+		{
+			print_failure( get_lang("no_rights") );
+			echo "<table class='center'><tr><td><a href='?m=gamemanager&amp;p=game_monitor&amp;home_id=".$server_home['home_id']."'><< ". get_lang("back") ."</a></td></tr></table>";
+			return;
+		}
+		
+		$ip_ports = $db->getHomeIpPorts($server_home['home_id']);
+		$is_address_assigned = false;
+		foreach($ip_ports as $ip_port)
+		{
+			if($ip_port['ip'] == $ip and $ip_port['port'] == $port)
+			{
+				$server_home = array_merge($server_home, $ip_port);
+				$is_address_assigned = true;
+				break;
+			}
+		}
+		
+		if(!$is_address_assigned)
+		{
+			print_failure( get_lang("no_access_to_home") );
+			return;
+		}
+				
 		$remote = new OGPRemoteLibrary($server_home['agent_ip'], 
 									   $server_home['agent_port'], 
 									   $server_home['encryption_key'], 
@@ -133,6 +156,7 @@ function exec_ogp_module()
 				 "<input type=submit name=create value='".get_lang("create_alias")
 				 ."'/>\n</form>";
 		}
+		echo "<br><a href='?m=gamemanager&p=game_monitor&home_id-mod_id-ip-port=".$_GET['home_id-mod_id-ip-port']."'>".get_lang('back')."</a>";
 	} 
 }
 ?>

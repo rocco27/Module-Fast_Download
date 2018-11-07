@@ -50,7 +50,7 @@ define('OGP_LANG_configuration_file_could_not_be_written', "A konfigurációs f�
 define('OGP_LANG_remove_folders', "Mappa eltávolítása a kiválasztott álnevektől.");
 define('OGP_LANG_remove_folder', "Mappa eltávolítása");
 define('OGP_LANG_delete_alias', "Álnév törlése");
-define('OGP_LANG_no_game_homes_assigned', "Nincsenek játék szerverek hozzád rendelve. Meg kell kérdned az OGP Admint, hogy rendeljen játékot hozzád.");
+define('OGP_LANG_no_game_homes_assigned', "Nincsenek szerverek hozzárendelve a fiókodhoz.");
 define('OGP_LANG_select_remote_server', "Válassz távoli szervert");
 define('OGP_LANG_access_rules', "Hozzáférési szabályok");
 define('OGP_LANG_create_aliases', "Álnevek létrehozása");
